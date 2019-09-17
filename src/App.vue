@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <div class="header">
-      <div class="header-image"></div>
+      <div class="header-content">
+        Jessica Radin <br>
+        & <br>
+        Jack Brennan
+      </div>
       <nav-bar></nav-bar>
     </div>
   <div class="body"></div>
@@ -22,16 +26,15 @@ export default {
 <style lang="less">
 body {
   margin: 0px;
-  background-color: #cef5d8;
+  background-image: url('./assets/images/wood-background.jpg');
 }
 #app {
-  .header {
-    height: 200px;
-    background-color: #A83288;
-
-    .header-image {
-      height: 160px;
-    }
+  .header-content {
+    color: white;
+    font-family: 'Italianno', cursive;;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
   }
 
   .body {
@@ -41,6 +44,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
+    margin-bottom: 20px;
   }
 }
 </style>
