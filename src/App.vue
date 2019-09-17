@@ -31,7 +31,6 @@ body {
 #app {
   .header-content {
     color: white;
-    font-family: 'Italianno', cursive;;
     text-align: center;
     font-size: 40px;
     padding: 30px;

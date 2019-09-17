@@ -1,35 +1,38 @@
 <template>
 <nav class="navbar">
-  <div>
     <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Travel & Lodging</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Registry</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">RSVP</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
-      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Schedule</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Travel & Lodging</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Registry</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">RSVP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+        </li>
     </ul>
-  </div>
 </nav>
 </template>
 
 <style lang="less" scoped>
 .navbar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline-start: 0px;
+
     .nav-list {
         list-style: none;
         background-color: #444;
