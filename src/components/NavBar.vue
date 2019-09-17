@@ -65,7 +65,7 @@
 @media screen and (min-width: 600px) {
   .nav-item {
     display: inline-block;
-    width: 120px;
+    width: 130px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
