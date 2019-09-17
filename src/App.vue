@@ -5,18 +5,16 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
   components: {
-    //HelloWorld
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="less">
 #app {
-
+  background-color: #cef5d8;
 }
 </style>
