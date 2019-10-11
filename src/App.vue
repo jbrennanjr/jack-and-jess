@@ -42,10 +42,11 @@ body {
     text-align: center;
 
     .header-content {
-      color: white;
+      color: #fff;
       text-align: center;
-      font-size: 40px;
+      font-size: 70px;
       padding: 30px;
+      font-family: 'Allura', sans-serif;
     }
 
     nav {
@@ -64,7 +65,7 @@ body {
         font-weight: 700;
         text-shadow: none;
         font-size: 1em;
-        font-family: 'Raleway', sans-serif;;
+        font-family: 'Raleway', sans-serif;
         -webkit-transition: color 0.3s;
         -moz-transition: color 0.3s;
         transition: color 0.3s;
@@ -88,6 +89,8 @@ body {
           transform: translateY(10px);
         }
 
+        &.active::before,
+        &.active::after,
         &:hover::before,
         &:hover::after {
           opacity: 1;
