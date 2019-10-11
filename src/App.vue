@@ -2,37 +2,17 @@
   <div id="app">
     <div class="header">
       <div class="header-content">
-        Jessica Radin <br>
-        & <br>
-        Jack Brennan
+        Jessica Radin & Jack Brennan
       </div>
       <nav class="navbar">
-        <ul class="nav-list">
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/">Home</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/lodging">Lodging</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
-            </li>
-        </ul>
+        <router-link class="nav-link" href="#" to="/">Home</router-link>
+        <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
+        <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link>
+        <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
+        <router-link class="nav-link" href="#" to="/lodging">Lodging</router-link>
+        <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
+        <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
+        <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
     </nav>
     </div>
     <div class="body">
@@ -53,69 +33,95 @@ export default {
 <style lang="less">
 body {
   margin: 0px;
-  background-image: url('./assets/images/wood-background.jpg');
+  background-image: url('./assets/images/background.jpg');
+  background-size: cover;
 }
 
 #app {
-  .header-content {
-    color: white;
+  .header {
     text-align: center;
-    font-size: 40px;
-    padding: 30px;
-  }
 
-  .navbar {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-inline-start: 0px;
-
-    .nav-list {
-      list-style: none;
-      background-color: #444;
+    .header-content {
+      color: white;
       text-align: center;
-      padding: 5;
+      font-size: 40px;
+      padding: 30px;
+    }
 
-      .nav-item {
-        font-family: 'Oswald', sans-serif;
-        font-size: 15px;
-        line-height: 40px;
-        height: 40px;
+    nav {
+      display: block;
 
-        .nav-link {
-          text-decoration: none;
+      a {
+        position: relative;
+        display: inline-block;
+        margin: 15px 25px;
+        padding: 10px;
+        outline: none;
+        color: #237546;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-shadow: none;
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        transition: color 0.3s;
+
+        &.active,
+        &:hover {
           color: #fff;
-          display: block;
-          transition: .3s background-color;
+        }
 
-          &:hover {
-            background-color: #005f5f;
-          }
+        &:before {
+          top: 0;
+          -webkit-transform: translateY(-10px);
+          -moz-transform: translateY(-10px);
+          transform: translateY(-10px);
+        }
 
-          &.active {
-            background-color: #fff;
-            color: #444;
-            cursor: default;
-          }
+        &:after {
+          bottom: 0;
+          -webkit-transform: translateY(10px);
+          -moz-transform: translateY(10px);
+          transform: translateY(10px);
+        }
+
+        &:hover::before,
+        &:hover::after {
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+
+        &:after,
+        &:before {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          content: '';
+          opacity: 0;
+          -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+          -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+          transition: opacity 0.3s, transform 0.3s;
         }
       }
     }
   }
 
+
   @media screen and (min-width: 600px) {
-    .nav-item {
-      display: inline-block;
-      width: 130px;
-      border-bottom: none;
-      height: 50px;
-      line-height: 50px;
-    }
+
   }
 
   .body {
-    width: 60%;
+    width: 55%;
     background-color: #fff;
-    height: 800px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
