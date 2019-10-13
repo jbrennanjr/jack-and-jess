@@ -45,11 +45,17 @@ body {
 	.body {
 		width: 55%;
 		background-color: #fff;
+		opacity: 0.85;
+		padding: 10px;
 		height: 700px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 16px;
 		margin-bottom: 20px;
+
+		box-shadow: inset 0px 0px 100px #d9ffff;
+		box-shadow: 0 0 20px #999;
+		border-radius: 5px;
 	}
 }
 </style>
