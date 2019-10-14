@@ -3,7 +3,6 @@
         <router-link class="nav-link" href="#" to="/">Home</router-link>
         <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
         <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link>
-        <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
         <router-link class="nav-link" href="#" to="/lodging">Lodging</router-link>
         <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
         <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>

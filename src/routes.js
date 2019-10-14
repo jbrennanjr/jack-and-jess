@@ -1,7 +1,6 @@
 import Home from './components/Home.vue';
 import AboutUs from './components/AboutUs.vue';
 import Schedule from './components/Schedule.vue';
-import Travel from './components/Travel.vue';
 import Lodging from './components/Lodging.vue';
 import Registry from './components/Registry.vue';
 import RSVP from './components/RSVP.vue';
@@ -11,7 +10,6 @@ const routes = [
     { path: '/', component: Home },
     { path: '/about-us', component: AboutUs },
     { path: '/schedule', component: Schedule },
-    { path: '/travel', component: Travel },
     { path: '/lodging', component: Lodging },
     { path: '/registry', component: Registry },
     { path: '/rsvp', component: RSVP },
