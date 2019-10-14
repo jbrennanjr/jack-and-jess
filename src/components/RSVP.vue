@@ -1,28 +1,38 @@
 <template>
 <div>
-    <p>Please submit the form once for each guest.</p>
+    <p>Submit the form once for each guest</p>
     <form class="rsvp-form" name="rsvp" method="POST" data-netlify="true">
         <div class="text-input-field">
             <input type="text" name="full-name" id="full-name" placeholder=" ">
             <label for="full-name">Full Name</label>
         </div>
-        <div class="dinner-radio-group">
-            <div class="dinner-radio-item">
+        <div class="radio-group">
+            <div class="radio-item">
+                <input type="radio" id="accept" name="attending-choice" value="accept">
+                <label for="accept">Gladly Accepts</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="decline" name="attending-choice" value="decline">
+                <label for="decline">Sadly Decline</label>
+            </div>
+        </div>
+        <p>Reception Dinner choices:</p>
+        <div class="radio-group">
+            <div class="radio-item">
                 <input type="radio" id="chicken" name="dinner-choice" value="chicken">
                 <label for="chicken">Chicken</label>
             </div>
-            <div class="dinner-radio-item">
+            <div class="radio-item">
                 <input type="radio" id="steak" name="dinner-choice" value="steak">
                 <label for="steak">Steak</label>
             </div>
-            <div class="dinner-radio-item">
+            <div class="radio-item">
                 <input type="radio" id="other" name="dinner-choice" value="other">
                 <label for="other">Other</label>
             </div>
         </div>
-        <div class="submit-buttons">
-            <button class="accept-button">Accept</button>
-            <button class="decline-button">Regret</button>
+        <div class="submit-container">
+            <button class="sumbit-button">Submit</button>
         </div>
     </form>
     <p>Please let us know if you have any dietary restrictions.</p>
@@ -32,12 +42,12 @@
 <style lang="less" scoped>
 p {
     margin: 0px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .rsvp-form {
     text-align: left;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -45,6 +55,7 @@ p {
     .text-input-field {
         display: flex;
         flex-flow: column-reverse;
+        margin-bottom: 20px;
 
         label, input {
             transition: all 0.2s;
@@ -66,6 +77,10 @@ p {
         input:focus {
             outline: 0;
             border-bottom: 1px solid #666;
+
+            &:placeholder-shown + label {
+                opacity: .5;
+            }
         }
 
         input:placeholder-shown + label {
@@ -91,18 +106,69 @@ p {
             input:focus + label {
             transform: translate(0, 0) scale(1);
             cursor: pointer;
+            opacity: .5;
         }
     }
 
-    .dinner-radio-group {
-        margin: 20px;
+    .radio-group {
+        margin: 0px 20px 20px 20px;
 
-        .dinner-radio-item {
+        .radio-item {
             padding: 10px;
         }
+
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+        [type="radio"]:checked + label,
+        [type="radio"]:not(:checked) + label
+        {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+        }
+        [type="radio"]:checked + label:before,
+        [type="radio"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #237546;
+            border-radius: 100%;
+            background: #fff;
+        }
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #237546;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        [type="radio"]:checked + label:after {
+            opacity: .8;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
     }
 
-    .submit-buttons {
+    .submit-container {
         text-align: center;
 
         button {
@@ -110,18 +176,21 @@ p {
             padding: 10px;
             width: 100px;
             border: none;
-            opacity: 1;
             border-radius: 5px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 700;
 
             &:hover {
                 cursor: pointer;
             }
 
-            &.accept-button {
+            &.sumbit-button {
                 background-color: #64d193;
-            }
-            &.decline-button {
-                background-color: #d19364;
+
+                &:hover {
+                    background-color: #35b361;
+                }
             }
         }
     }

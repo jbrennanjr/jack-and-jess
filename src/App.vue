@@ -46,13 +46,11 @@ body {
 		width: 55%;
 		background-color: #fff;
 		padding: 20px;
-		color: #237546;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 16px;
 		margin-bottom: 20px;
 		text-align:center;
-		opacity: 0.85;
 		box-shadow: inset 0px 0px 100px #d9ffff;
 		box-shadow: 0 0 20px #999;
 		border-radius: 5px;
