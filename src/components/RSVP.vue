@@ -30,12 +30,12 @@
                 <input type="radio" id="other" name="dinner-choice" value="other">
                 <label for="other">Other</label>
             </div>
+            <p class="disclaimer">Please call or email us if we need to know of any dietary restrictions.</p>
         </div>
         <div class="submit-container">
             <button class="sumbit-button">Submit</button>
         </div>
     </form>
-    <p>Please let us know if you have any dietary restrictions.</p>
 </div>
 </template>
 
@@ -43,12 +43,18 @@
 p {
     margin: 0px;
     font-size: 14px;
+
+    &.disclaimer {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
 
 .rsvp-form {
     text-align: left;
     padding: 5px 20px 20px 20px;
     width: 50%;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
 
