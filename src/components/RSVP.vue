@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="page-content">
     <p>Submit the form once for each guest</p>
     <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true">
         <div class="text-input-field">
@@ -76,6 +76,13 @@ module.exports = {
 </script>
 
 <style lang="less" scoped>
+.page-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 p {
     margin: 0px;
     font-size: 14px;
