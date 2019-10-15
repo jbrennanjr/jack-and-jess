@@ -1,43 +1,79 @@
 <template>
 <div>
     <p>Submit the form once for each guest</p>
-    <form class="rsvp-form" name="rsvp" method="POST" data-netlify="true">
+    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true">
         <div class="text-input-field">
-            <input type="text" name="full-name" id="full-name" placeholder=" ">
+            <input type="text" name="full-name" id="full-name" placeholder=" "  v-model="fullName">
             <label for="full-name">Full Name</label>
         </div>
-        <div class="radio-group">
+        <div class="radio-group attending-group">
             <div class="radio-item">
-                <input type="radio" id="accept" name="attending-choice" value="accept">
+                <input type="radio" id="accept" name="attending-choice" value="accept" v-model="attending">
                 <label for="accept">Gladly Accepts</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="decline" name="attending-choice" value="decline">
+                <input type="radio" id="decline" name="attending-choice" value="decline" v-model="attending">
                 <label for="decline">Sadly Decline</label>
             </div>
         </div>
         <p>Reception Dinner choices:</p>
-        <div class="radio-group">
+        <div class="radio-group meal-group">
             <div class="radio-item">
-                <input type="radio" id="chicken" name="dinner-choice" value="chicken">
+                <input type="radio" id="chicken" name="dinner-choice" value="chicken" v-model="meal">
                 <label for="chicken">Chicken</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="steak" name="dinner-choice" value="steak">
+                <input type="radio" id="steak" name="dinner-choice" value="steak" v-model="meal">
                 <label for="steak">Steak</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="other" name="dinner-choice" value="other">
+                <input type="radio" id="other" name="dinner-choice" value="other" v-model="meal">
                 <label for="other">Other</label>
             </div>
-            <p class="disclaimer">Please call or email us if we need to know of any dietary restrictions.</p>
+            <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
+        <p class="error">{{errorText}}</p>
         <div class="submit-container">
             <button class="sumbit-button">Submit</button>
         </div>
     </form>
 </div>
 </template>
+
+<script>
+module.exports = {
+    data() {
+        return{
+            fullName: null,
+            attending: null,
+            meal: null,
+            showError: false,
+            errorText: null
+        }
+    },
+    methods: {
+        checkForm: function (e) {
+            if (!this.fullName) {
+                e.preventDefault();
+                this.errorText = "Please enter your name.";
+                return;
+            }
+
+            if (this.attending == null) {
+                e.preventDefault();
+                this.errorText = "Please select whether or not you are able to attend.";
+                return;
+            }
+
+            if (this.attending == "accept" && this.meal == null) {
+                e.preventDefault();
+                this.errorText = "Please select a meal option.";
+                return;
+            }
+        }
+    }
+}
+</script>
 
 <style lang="less" scoped>
 p {
@@ -48,12 +84,20 @@ p {
         padding: 5px;
         font-size: 12px;
     }
+
+    &.error {
+        display: block;
+        height: 15px;
+        color: red;
+        margin: 15px 0px;
+        text-align: center;
+    }
 }
 
 .rsvp-form {
     text-align: left;
     padding: 5px 20px 20px 20px;
-    width: 50%;
+    width: 55%;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -121,6 +165,14 @@ p {
 
         .radio-item {
             padding: 10px;
+        }
+
+        &.attending-group {
+            margin: 0px 20px 20px 0px;
+
+            .radio-item {
+                padding-left: 0px;
+            }
         }
 
         [type="radio"]:checked,

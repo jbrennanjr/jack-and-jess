@@ -55,8 +55,7 @@ body {
 		box-shadow: 0 0 20px #999;
 		border-radius: 5px;
 		font-family: 'Raleway', sans-serif;
-		letter-spacing: 1px;
-		font-weight: 700;
+		letter-spacing: 2px;
 	}
 }
 </style>
