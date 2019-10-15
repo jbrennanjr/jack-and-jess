@@ -9,7 +9,7 @@
         <div class="radio-group attending-group">
             <div class="radio-item">
                 <input type="radio" id="accept" name="attending-choice" value="accept" v-model="attending">
-                <label for="accept">Gladly Accepts</label>
+                <label for="accept">Gladly Accept</label>
             </div>
             <div class="radio-item">
                 <input type="radio" id="decline" name="attending-choice" value="decline" v-model="attending">

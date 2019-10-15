@@ -7,7 +7,7 @@
 			<nav-bar></nav-bar>
 		</div>
 		<div class="body">
-			<router-view></router-view>
+			<router-view class="content-container"></router-view>
 		</div>
 	</div>
 </template>
@@ -43,7 +43,9 @@ body {
 	}
 
 	.body {
+		position: relative;
 		width: 55%;
+		height: 600px;
 		background-color: #fff;
 		padding: 20px;
 		margin-left: auto;
@@ -56,6 +58,13 @@ body {
 		border-radius: 5px;
 		font-family: 'Raleway', sans-serif;
 		letter-spacing: 2px;
+
+		.content-container {
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 }
 </style>
