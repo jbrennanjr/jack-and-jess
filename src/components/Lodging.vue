@@ -55,6 +55,7 @@
             border: none;
             margin: 0;
             padding: 0;
+            border-radius: 0px 5px 5px 0px;
         }
     }
 
