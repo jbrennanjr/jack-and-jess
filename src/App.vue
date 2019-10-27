@@ -1,28 +1,69 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<div class="header">
+			<div class="header-content">
+				Jessica Radin & Jack Brennan
+			</div>
+			<nav-bar></nav-bar>
+		</div>
+		<div class="body">
+			<router-view></router-view>
+		</div>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from './components/NavBar'
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+	name: 'app',
+	components: {
+		NavBar
+	}
 }
 </script>
 
-<style>
+<style lang="less">
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0px;
+	background-image: url('./assets/images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	.header {
+		text-align: center;
+
+		.header-content {
+			color: #fff;
+			text-align: center;
+			font-size: 70px;
+			padding: 30px;
+			font-family: 'Allura', sans-serif;
+		}
+	}
+
+	.body {
+		position: relative;
+		width: 55%;
+		min-height: 600px;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 16px;
+		margin-bottom: 20px;
+		text-align:center;
+		box-shadow: inset 0px 0px 100px #d9ffff;
+		box-shadow: 0 0 20px #999;
+		border-radius: 5px;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 2px;
+	}
 }
 </style>
