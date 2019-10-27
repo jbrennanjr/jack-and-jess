@@ -23,10 +23,17 @@ export default {
 </script>
 
 <style lang="less">
+html {
+	overflow-y: scroll;
+}
+
 body {
 	margin: 0px;
 	background-image: url('./assets/images/background.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 #app {
@@ -45,7 +52,7 @@ body {
 	.body {
 		position: relative;
 		width: 55%;
-		height: 600px;
+		min-height: 600px;
 		background-color: #fff;
 		margin-left: auto;
 		margin-right: auto;

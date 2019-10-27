@@ -1,24 +1,26 @@
 <template>
     <div class="page-content">
         <div class="content-left">
-            <ul class="hotel-list">
+            <ul class="location-list">
                 <li>
-                    <a class="hotel-name" href="https://www.marriott.com/hotels/travel/bossd-springhill-suites-devens-common-center/">SpringHill Suites by Marriott</a>
+                    <h3>Ceremony & Reception Venue</h3>
+                    <a class="location-name" target="_blank" href="http://harringtonfarm.com/">Harrington Farm</a>
                     <address>
                         <blockquote>
-                            <a class="hotel-address" href="https://goo.gl/maps/ABAqf1ZwgSsryVby6">27 Andrews Pkwy, Devens, MA 01434</a>
-                            <p class="phone-number">(978) 772-3030</p>
+                            <a class="location-address" target="_blank" href="https://goo.gl/maps/veHPpePEVXiVvHzG9">178 Westminster Rd, Princeton, MA 01541</a>
                         </blockquote>
                     </address>
                 </li>
                 <li>
-                    <a class="hotel-name" href="https://hiltongardeninn3.hilton.com/en/hotels/massachusetts/hilton-garden-inn-devens-common-ORHDCGI/index.html?SEO_id=GMB-HI-ORHDCGI">Hilton Garden Inn</a>
+                    <h3>Suggested Lodging</h3>
+                    <a class="location-name" target="_blank" href="https://doubletree3.hilton.com/en/hotels/massachusetts/doubletree-by-hilton-hotel-leominster-ORHLEDT/index.html">DoubleTree by Hilton Hotel Leominster</a>
                     <address>
                         <blockquote>
-                            <a class="hotel-address" href="https://goo.gl/maps/ygXd3GAbSkMFQkcu6">59 Andrews Pkwy, Devens, MA 01434</a>
-                            <p class="phone-number">(978) 772-0600</p>
+                            <a class="location-address" target="_blank" href="https://goo.gl/maps/h1yZS4gq5yk6zAUx8">99 Erdman Way, Leominster, MA 01453</a>
+                            <p class="phone-number">(978) 534-9000</p>
                         </blockquote>
                     </address>
+                    <p>Please use code "TBD" to reserve a room at our discounted rate.</p>
                 </li>
             </ul>
         </div>
@@ -49,6 +51,7 @@
 
     .content-right {
         display: flex;
+        min-height: 600px;
 
         iframe {
             flex-grow: 1;
@@ -59,15 +62,20 @@
         }
     }
 
-    .hotel-list {
+    .location-list {
         list-style-type: none;
         padding-left: 10px;
+        margin-top: 0px;
+
+        h3 {
+            margin-top: 0px;
+        }
 
         li:first-of-type {
             margin-bottom: 50px;
         }
 
-        .hotel-name {
+        .location-name {
             font-weight: 700;
             text-decoration: none;
             color: inherit;
@@ -77,7 +85,7 @@
             }
         }
 
-        .hotel-address {
+        .location-address {
             text-decoration: none;
             color: inherit;
 
