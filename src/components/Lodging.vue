@@ -4,7 +4,7 @@
             <ul class="location-list">
                 <li>
                     <h3>Ceremony & Reception Venue</h3>
-                    <a class="location-name" target="_blank" href="http://harringtonfarm.com/">Harrington Farm</a>
+                    <a class="location-name" target="_blank" href="http://harringtonfarm.com/">Harrington Farm (B)</a>
                     <address>
                         <blockquote>
                             <a class="location-address" target="_blank" href="https://goo.gl/maps/veHPpePEVXiVvHzG9">178 Westminster Rd, Princeton, MA 01541</a>
@@ -13,7 +13,7 @@
                 </li>
                 <li>
                     <h3>Suggested Lodging</h3>
-                    <a class="location-name" target="_blank" href="https://doubletree3.hilton.com/en/hotels/massachusetts/doubletree-by-hilton-hotel-leominster-ORHLEDT/index.html">DoubleTree by Hilton Hotel Leominster</a>
+                    <a class="location-name" target="_blank" href="https://doubletree3.hilton.com/en/hotels/massachusetts/doubletree-by-hilton-hotel-leominster-ORHLEDT/index.html">DoubleTree by Hilton Hotel Leominster (A)</a>
                     <address>
                         <blockquote>
                             <a class="location-address" target="_blank" href="https://goo.gl/maps/h1yZS4gq5yk6zAUx8">99 Erdman Way, Leominster, MA 01453</a>
@@ -21,6 +21,26 @@
                         </blockquote>
                     </address>
                     <p>Please use code "TBD" to reserve a room at our discounted rate.</p>
+                </li>
+                <li>
+                    <h3>Other Lodging Options</h3>
+                    <p>Please note that shuttle service will not be available from these locations.</p>
+                    <a class="location-name" href="https://www.marriott.com/hotels/travel/bossd-springhill-suites-devens-common-center/">SpringHill Suites by Marriott</a>
+                    <address>
+                        <blockquote>
+                            <a class="location-address" href="https://goo.gl/maps/ABAqf1ZwgSsryVby6">27 Andrews Pkwy, Devens, MA 01434</a>
+                            <p class="phone-number">(978) 772-3030</p>
+                        </blockquote>
+                    </address>
+                </li>
+                <li>
+                    <a class="location-name" href="https://hiltongardeninn3.hilton.com/en/hotels/massachusetts/hilton-garden-inn-devens-common-ORHDCGI/index.html?SEO_id=GMB-HI-ORHDCGI">Hilton Garden Inn</a>
+                    <address>
+                        <blockquote>
+                            <a class="location-address" href="https://goo.gl/maps/ygXd3GAbSkMFQkcu6">59 Andrews Pkwy, Devens, MA 01434</a>
+                            <p class="phone-number">(978) 772-0600</p>
+                        </blockquote>
+                    </address>
                 </li>
             </ul>
         </div>
@@ -52,6 +72,7 @@
     .content-right {
         display: flex;
         min-height: 600px;
+        background-color: #f2f1f0;
 
         iframe {
             flex-grow: 1;
