@@ -44,6 +44,7 @@
 
         .answer {
             margin-top: 0px;
+            font-size: 14px;
         }
 
         .email {
