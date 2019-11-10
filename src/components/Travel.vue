@@ -83,6 +83,7 @@
             h3 {
                 margin-top: 0px;
                 margin-bottom: 15px;
+                text-decoration: underline;
             }
 
             p {
