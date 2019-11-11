@@ -52,7 +52,7 @@ module.exports = {
         }
     },
     methods: {
-        checkForm: function (e) {
+        checkForm(e) {
             if (!this.fullName) {
                 e.preventDefault();
                 this.errorText = "Please enter your name.";
@@ -61,7 +61,7 @@ module.exports = {
 
             if (this.attending == null) {
                 e.preventDefault();
-                this.errorText = "Please select whether or not you are able to attend.";
+                this.errorText = "Please select whether or not this guest is able to attend.";
                 return;
             }
 
