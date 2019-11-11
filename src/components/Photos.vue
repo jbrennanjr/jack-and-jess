@@ -48,7 +48,7 @@ export default {
         }
     },
     mounted() {
-         this.importAll(require.context(this.imageDir, true, /\.jpg$/));
+         this.importAll(requireContext(this.imageDir, true, /\.jpg$/));
     }
 }
 </script>
