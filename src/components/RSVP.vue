@@ -52,7 +52,7 @@ module.exports = {
         }
     },
     methods: {
-        checkForm: function (e) {
+        checkForm(e) {
             if (!this.fullName) {
                 e.preventDefault();
                 this.errorText = "Please enter your name.";
@@ -61,7 +61,7 @@ module.exports = {
 
             if (this.attending == null) {
                 e.preventDefault();
-                this.errorText = "Please select whether or not you are able to attend.";
+                this.errorText = "Please select whether or not this guest is able to attend.";
                 return;
             }
 
@@ -89,7 +89,6 @@ p {
 
     &.disclaimer {
         padding: 5px;
-        font-size: 12px;
     }
 
     &.error {
@@ -105,7 +104,7 @@ p {
     text-align: left;
     padding: 5px 20px 20px 20px;
     width: 55%;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 
@@ -168,7 +167,7 @@ p {
     }
 
     .radio-group {
-        margin: 0px 20px 20px 20px;
+        margin: 10px 20px 20px 20px;
 
         .radio-item {
             padding: 10px;
@@ -238,23 +237,23 @@ p {
 
         button {
             margin: 0px 10px;
-            padding: 10px;
-            width: 100px;
+            padding: 15px 30px;
             border: none;
             border-radius: 5px;
             font-family: 'Raleway', sans-serif;
             letter-spacing: 1px;
             font-weight: 700;
+            font-size: 14px;
 
             &:hover {
                 cursor: pointer;
             }
 
             &.sumbit-button {
-                background-color: #64d193;
+                background-color: #69ac9a;
 
                 &:hover {
-                    background-color: #35b361;
+                    background-color: #488e8c;
                 }
             }
         }

@@ -64,6 +64,7 @@ body {
 		border-radius: 5px;
 		font-family: 'Raleway', sans-serif;
 		letter-spacing: 2px;
+		color: #174e2f;
 	}
 }
 </style>
