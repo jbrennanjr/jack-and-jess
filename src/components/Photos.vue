@@ -1,5 +1,6 @@
 <template>
     <div class="page-content">
+        <div class="icon-arrow" :class="{collapse: showEngagement}"></div>
         <h2 @click="showEngagement = !showEngagement">Engagement Photos - Arnold Arboretum</h2>
         <div v-show="showEngagement" class="engagement-photos">
             <img v-for="(src, index) in engagementPaths" :key="index" :src="src" alt=""  @click="() => showImg(index)">
@@ -22,6 +23,7 @@ export default {
     },
     data() {
         return{
+            // dir/s/b *.jpg > photoPaths.txt
             engagementPaths: [
                 require("../assets/images/engagement/_R6A1578-2.jpg"),
                 require("../assets/images/engagement/_R6A1578.jpg"),
@@ -132,6 +134,19 @@ export default {
         margin-top: 0px;
         cursor: pointer;
         float: left;
+        padding-left: 15px;
+    }
+
+    .icon-arrow {
+        width: 30px;
+        height: 30px;
+        background-image: url('../assets/images/icon-expand.svg');
+        float: left;
+        cursor: pointer;
+
+        &.collapse {
+            background-image: url('../assets/images/icon-collapse.svg');
+        }
     }
 
     .engagement-photos {
