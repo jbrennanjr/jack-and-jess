@@ -2,7 +2,7 @@
 	<div id="app">
 		<div class="header">
 			<div class="header-content">
-				Jessica Radin & Jack Brennan
+				<div class="no-wrap">Jessica Radin</div><div class="ampersand">&</div><div class="no-wrap">Jack Brennan</div>
 			</div>
 			<nav-bar></nav-bar>
 		</div>
@@ -46,6 +46,15 @@ body {
 			font-size: 70px;
 			padding: 30px;
 			font-family: 'Allura', sans-serif;
+			
+			div {
+				display: inline-block;
+			}
+
+			.ampersand {
+				margin: 0px 20px;
+    			font-size: 50px;
+			}
 		}
 	}
 
@@ -66,5 +75,41 @@ body {
 		letter-spacing: 2px;
 		color: #174e2f;
 	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+	#app {
+		.header {
+			.header-content {
+				font-size: 50px;
+				padding: 0px;
+				padding-top: 60px;
+
+				div {
+					display: block;
+				}
+
+				.ampersand {
+					margin: 0px 15px;
+					font-size: 35px;
+				}
+				
+				.no-wrap {
+					white-space: nowrap;
+				}
+			}
+		}
+
+		.body {
+			width: 100%;
+			border-radius: 0px;
+		}
+	}
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+    
 }
 </style>

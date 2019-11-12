@@ -1,17 +1,59 @@
 <template>
-    <nav class="navbar">
-        <router-link class="nav-link" href="#" to="/">Home</router-link>
-        <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
-        <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
-        <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link>
-        <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
-        <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
-        <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
-        <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
-    </nav>
+    <div>
+        <div class="mobile-header"><div class="icon-hamburger" @click="toggleNav"></div></div>
+        <nav v-show="this.showNav" class="navbar mobile">
+            <router-link class="nav-link" href="#" to="/">Home</router-link>
+            <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
+            <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
+            <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link>
+            <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
+            <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
+            <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
+            <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
+        </nav>
+
+        <nav class="navbar desktop">
+            <router-link class="nav-link" href="#" to="/">Home</router-link>
+            <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
+            <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
+            <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link>
+            <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
+            <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
+            <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
+            <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
+        </nav>
+    </div>
 </template>
 
+<script>
+module.exports = {
+    computed: {
+        showNav() {
+            return this.$store.state.showNav;
+        }
+    },
+    methods: {
+        toggleNav() {
+            this.$store.commit('toggleNav', !this.showNav);
+        }
+    }
+}
+</script>
+
 <style lang="less" scoped>
+.mobile-header {
+    display: none;
+
+    .icon-hamburger {
+        width: 33px;
+        height: 33px;
+        background-image: url('../assets/icons/icon-hamburger.svg');
+        cursor: pointer;
+        float: right;
+        margin: 8px;
+    }
+}
+
 nav {
     display: block;
 
@@ -76,5 +118,36 @@ nav {
             transition: opacity 0.3s, transform 0.3s;
         }
     }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+    .mobile-header {
+        display: block;
+        width: 100%;
+        background-color: #237546;
+        height:50px;
+        position:absolute;
+        top: 0;
+    }
+
+    nav {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top: 50px;
+        right: 0px;
+        z-index: 2;
+        background-color: #69ac9a;
+
+        &.desktop {
+            display: none;
+        }
+    }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+    
 }
 </style>

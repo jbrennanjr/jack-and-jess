@@ -140,12 +140,12 @@ export default {
     .icon-arrow {
         width: 30px;
         height: 30px;
-        background-image: url('../assets/images/icon-expand.svg');
+        background-image: url('../assets/icons/icon-expand.svg');
         float: left;
         cursor: pointer;
 
         &.collapse {
-            background-image: url('../assets/images/icon-collapse.svg');
+            background-image: url('../assets/icons/icon-collapse.svg');
         }
     }
 
