@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="mobile-header"><div class="icon-hamburger" @click="toggleNav"></div></div>
-        <nav v-show="this.showNav" class="navbar mobile">
+        <nav v-show="$store.state.showNav" class="navbar mobile">
             <router-link class="nav-link" href="#" to="/">Home</router-link>
             <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
             <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
@@ -27,14 +27,9 @@
 
 <script>
 module.exports = {
-    computed: {
-        showNav() {
-            return this.$store.state.showNav;
-        }
-    },
     methods: {
         toggleNav() {
-            this.$store.commit('toggleNav', !this.showNav);
+            this.$store.commit('toggleNav', !this.$store.state.showNav);
         }
     }
 }
@@ -63,7 +58,7 @@ nav {
         margin: 15px 25px;
         padding: 10px;
         outline: none;
-        color: #237546;
+        color: #174e2f;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -120,12 +115,45 @@ nav {
     }
 }
 
+@media (max-device-width : 1100px) {
+    nav {
+        a {
+            margin: 15px 15px;
+        }
+    }
+}
+
+@media (max-device-width : 935px) {
+    nav {
+        a {
+            padding: 5px;
+            margin: 15px 5px;
+        }
+    }
+}
+
+@media (max-device-width : 775px) {
+    nav {
+        a {
+            font-size: 13px;
+            margin: 15px 5px;
+        }
+    }
+}
+
+@media (max-device-width : 700px) {
+    nav {
+        a {
+            color: #ecf4f6;
+        }
+    }
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 600px) {
     .mobile-header {
         display: block;
         width: 100%;
-        background-color: #237546;
         height:50px;
         position:absolute;
         top: 0;
@@ -139,6 +167,12 @@ nav {
         right: 0px;
         z-index: 2;
         background-color: #69ac9a;
+
+        a {
+            margin: 15px 25px;
+            padding: 10px;
+            font-size: 1em;
+        }
 
         &.desktop {
             display: none;

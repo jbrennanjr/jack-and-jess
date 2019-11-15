@@ -10,12 +10,6 @@ Vue.use(Vuex);
 Vue.use(Lightbox);
 Vue.config.productionTip = false;
 
-const router = new VueRouter({
-  routes, 
-  mode: 'history',
-  linkExactActiveClass: 'active'
-});
-
 const store = new Vuex.Store({
   state: {
     showNav: false
@@ -26,6 +20,17 @@ const store = new Vuex.Store({
     }
   }
 });
+
+const router = new VueRouter({
+  routes, 
+  mode: 'history',
+  linkExactActiveClass: 'active'
+});
+
+// After a nav link is routed to, hide the nav
+router.afterEach((to, from) => {
+  store.commit('toggleNav', false);
+})
 
 new Vue({
   router,

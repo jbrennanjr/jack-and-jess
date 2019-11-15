@@ -66,7 +66,6 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 16px;
-		margin-bottom: 20px;
 		text-align:center;
 		box-shadow: inset 0px 0px 100px #d9ffff;
 		box-shadow: 0 0 20px #999;
@@ -77,14 +76,44 @@ body {
 	}
 }
 
+
+@media (max-device-width : 1500px) {
+	#app {
+		.body {
+			width: 75%;
+		}
+	}
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 850px) {
 	#app {
 		.header {
 			.header-content {
+				font-size: 58px;
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 700px) {
+	body {
+		background-image: none;
+	}
+
+	#app {
+		.header {
+			padding-bottom: 16px;
+			background-image: url('./assets/images/background.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			.header-content {
 				font-size: 50px;
 				padding: 0px;
-				padding-top: 60px;
+				padding-top: 20px;
 
 				div {
 					display: block;
@@ -104,12 +133,8 @@ body {
 		.body {
 			width: 100%;
 			border-radius: 0px;
+			margin-top: 0px;
 		}
 	}
-}
-
-/* Tablets (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
-    
 }
 </style>
