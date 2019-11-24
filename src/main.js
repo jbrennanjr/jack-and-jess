@@ -28,7 +28,7 @@ const router = new VueRouter({
 });
 
 // After a nav link is routed to, hide the nav
-router.afterEach((to, from) => {
+router.afterEach(() => {
   store.commit('toggleNav', false);
 })
 

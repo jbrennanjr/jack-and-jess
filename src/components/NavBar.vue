@@ -161,7 +161,7 @@ nav {
 
     nav {
         position: absolute;
-        width: 40%;
+        width: 45%;
         height: 100%;
         top: 50px;
         right: 0px;

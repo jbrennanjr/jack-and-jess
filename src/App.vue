@@ -53,7 +53,7 @@ body {
 
 			.ampersand {
 				margin: 0px 20px;
-    			font-size: 50px;
+				font-size: 50px;
 			}
 		}
 	}
@@ -123,7 +123,7 @@ body {
 					margin: 0px 15px;
 					font-size: 35px;
 				}
-				
+
 				.no-wrap {
 					white-space: nowrap;
 				}
