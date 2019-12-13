@@ -36,4 +36,10 @@
         }
     }
 }
+
+@media only screen and (max-device-width : 700px) {
+    .page-content {
+        border-radius: 0px;
+    }
+}
 </style>

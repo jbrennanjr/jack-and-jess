@@ -1,7 +1,9 @@
 <template>
     <div class="page-content">
-        <div class="icon-arrow" :class="{collapse: showEngagement}"></div>
-        <h2 @click="showEngagement = !showEngagement">Engagement Photos - Arnold Arboretum</h2>
+        <div class="clearfix section-header" @click="showEngagement = !showEngagement">
+            <div class="icon-arrow" :class="{collapse: !showEngagement}"></div>
+            <h2>Engagement Photos - Arnold Arboretum</h2>
+        </div>
         <div v-show="showEngagement" class="engagement-photos">
             <img v-for="(src, index) in engagementPaths" :key="index" :src="src" alt=""  @click="() => showImg(index)">
 
@@ -130,9 +132,18 @@ export default {
 .page-content {
     padding: 20px;
 
+    .section-header {
+        cursor: pointer;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     h2 {
         margin-top: 0px;
-        cursor: pointer;
         float: left;
         padding-left: 15px;
     }
@@ -140,12 +151,12 @@ export default {
     .icon-arrow {
         width: 30px;
         height: 30px;
-        background-image: url('../assets/images/icon-expand.svg');
+        background-image: url('../assets/icons/icon-expand.svg');
         float: left;
         cursor: pointer;
 
         &.collapse {
-            background-image: url('../assets/images/icon-collapse.svg');
+            background-image: url('../assets/icons/icon-collapse.svg');
         }
     }
 
@@ -164,6 +175,46 @@ export default {
             height: auto !important;
             cursor: pointer;
             padding: 5px 0px;
+        }
+    }
+}
+
+@media (max-device-width : 810px) {
+    .page-content {
+        h2 {
+            font-size: 20px;
+        }
+
+        .icon-arrow {
+            position: relative;
+            bottom: 5px;
+        }
+    }
+}
+
+@media (max-device-width : 530px) {
+    .page-content {
+        h2 {
+            font-size: 16px;
+        }
+
+        .icon-arrow {
+            position: relative;
+            bottom: 5px;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 480px) {
+    .page-content {
+        h2 {
+            font-size: 13px;
+        }
+
+        .icon-arrow {
+            position: relative;
+            bottom: 8px;
         }
     }
 }

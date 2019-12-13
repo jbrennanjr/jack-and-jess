@@ -260,5 +260,10 @@ p {
     }
 }
 
-
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 480px) {
+    .rsvp-form {
+        width: 80%;
+    }
+}
 </style>
