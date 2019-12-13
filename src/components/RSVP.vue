@@ -1,7 +1,7 @@
 <template>
 <div class="page-content">
     <p>Submit the form once for each guest</p>
-    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" netlify netlify-honeypot="bot-field">
         <div class="text-input-field">
             <input type="text" name="full-name" id="full-name" placeholder=" "  v-model="fullName">
             <label for="full-name">Full Name</label>
