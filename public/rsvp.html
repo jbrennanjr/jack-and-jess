@@ -1,0 +1,39 @@
+<form class="rsvp-form" name="rsvp" netlify netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="rsvp" />
+    <input type="text" name="bot-field" v-show="false">
+    <div class="text-input-field">
+        <input type="text" name="full-name" id="full-name" placeholder=" "  v-model="fullName">
+        <label for="full-name">Full Name</label>
+    </div>
+    <div class="radio-group attending-group">
+        <div class="radio-item">
+            <input type="radio" id="accept" name="attending-accept" value="accept" v-model="attending">
+            <label for="accept">Gladly Accept</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="decline" name="attending-decline" value="decline" v-model="attending">
+            <label for="decline">Sadly Decline</label>
+        </div>
+    </div>
+    <p>Reception Dinner choices:</p>
+    <div class="radio-group meal-group">
+        <div class="radio-item">
+            <input type="radio" id="chicken" name="dinner-chicken" value="chicken" v-model="meal">
+            <label for="chicken">Chicken</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="steak" name="dinner-steak" value="steak" v-model="meal">
+            <label for="steak">Steak</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="other" name="dinner-other" value="other" v-model="meal">
+            <label for="other">Other</label>
+        </div>
+        <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
+    </div>
+
+    <p class="error"></p>
+    <div class="submit-container">
+        <button class="sumbit-button">Submit</button>
+    </div>
+</form>
