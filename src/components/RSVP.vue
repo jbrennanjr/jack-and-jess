@@ -1,37 +1,38 @@
 <template>
 <div class="page-content">
     <p>Submit the form once for each guest</p>
-    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true">
+    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <div class="text-input-field">
             <input type="text" name="full-name" id="full-name" placeholder=" "  v-model="fullName">
             <label for="full-name">Full Name</label>
         </div>
         <div class="radio-group attending-group">
             <div class="radio-item">
-                <input type="radio" id="accept" name="attending-choice" value="accept" v-model="attending">
+                <input type="radio" id="accept" name="attending-accept" value="accept" v-model="attending">
                 <label for="accept">Gladly Accept</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="decline" name="attending-choice" value="decline" v-model="attending">
+                <input type="radio" id="decline" name="attending-decline" value="decline" v-model="attending">
                 <label for="decline">Sadly Decline</label>
             </div>
         </div>
         <p>Reception Dinner choices:</p>
         <div class="radio-group meal-group">
             <div class="radio-item">
-                <input type="radio" id="chicken" name="dinner-choice" value="chicken" v-model="meal">
+                <input type="radio" id="chicken" name="dinner-chicken" value="chicken" v-model="meal">
                 <label for="chicken">Chicken</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="steak" name="dinner-choice" value="steak" v-model="meal">
+                <input type="radio" id="steak" name="dinner-steak" value="steak" v-model="meal">
                 <label for="steak">Steak</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="other" name="dinner-choice" value="other" v-model="meal">
+                <input type="radio" id="other" name="dinner-other" value="other" v-model="meal">
                 <label for="other">Other</label>
             </div>
             <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
+        <input type="text" name="bot-field" v-show="false">
         <p class="error">{{errorText}}</p>
         <div class="submit-container">
             <button class="sumbit-button">Submit</button>
