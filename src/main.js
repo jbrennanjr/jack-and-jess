@@ -22,8 +22,7 @@ const store = new Vuex.Store({
 });
 
 const router = new VueRouter({
-  routes, 
-  mode: 'history',
+  routes,
   linkExactActiveClass: 'active'
 });
 
