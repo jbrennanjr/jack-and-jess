@@ -32,6 +32,7 @@
             </div>
             <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
+        <input type="hidden" name="form-name" value="rsvp" />
         <input type="text" name="bot-field" v-show="false">
         <p class="error">{{errorText}}</p>
         <div class="submit-container">
