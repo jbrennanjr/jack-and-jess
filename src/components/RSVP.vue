@@ -1,7 +1,9 @@
 <template>
 <div class="page-content">
     <p>Submit the form once for each guest</p>
-    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" netlify netlify-honeypot="bot-field">
+    <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="rsvp" />
+        <input type="text" name="bot-field" v-show="false">
         <div class="text-input-field">
             <input type="text" name="full-name" id="full-name" placeholder=" "  v-model="fullName">
             <label for="full-name">Full Name</label>
@@ -32,8 +34,7 @@
             </div>
             <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
-        <input type="hidden" name="form-name" value="rsvp" />
-        <input type="text" name="bot-field" v-show="false">
+
         <p class="error">{{errorText}}</p>
         <div class="submit-container">
             <button class="sumbit-button">Submit</button>
