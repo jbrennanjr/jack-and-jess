@@ -5,8 +5,10 @@
                 <br>
                 <br>
                 <br>
-                <h3>We can’t wait to celebrate our wedding day with you.</h3>
                 <br>
+                <br>
+                <h3>Welcome to our wedding website!</h3>
+                <h4>We can’t wait to celebrate our wedding day with you.</h4>
                 <p>If you have any questions at all for us regarding the wedding or any details please feel free to call or text, or email us at <span class="email">jackbrennan.jessradin@gmail.com</span></p>
             </div>
         </div>
