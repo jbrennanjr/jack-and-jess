@@ -4,7 +4,7 @@
             <div class="welcome-content">
                 <br>
                 <br>
-                <h2>Welcome to our wedding website!</h2>
+                <br>
                 <h3>We can’t wait to celebrate our wedding day with you.</h3>
                 <br>
                 <p>If you have any questions at all for us regarding the wedding or any details please feel free to call or text, or email us at <span class="email">jackbrennan.jessradin@gmail.com</span></p>
@@ -15,7 +15,7 @@
 
 <style lang="less" scoped>
 .page-content {
-    background-image: url('../assets/images/home-page.jpg');
+    background-image: url('../assets/images/home-page.png');
 	background-size: cover;
 	background-repeat: no-repeat;
     background-position: top;
