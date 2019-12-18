@@ -37,7 +37,7 @@
         display: flex;
 
         &.zion {
-            background-image: url('../assets/images/about-us/zion.jpg');
+            background-image: url('../assets/images/about-us/zion.png');
             border-radius: 0px 0px 0px 5px;
         }
         &.skiing {

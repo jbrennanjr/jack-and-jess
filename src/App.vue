@@ -29,7 +29,8 @@ html {
 
 body {
 	margin: 0px;
-	background-image: url('./assets/images/background.jpg');
+	margin-bottom: 30px;
+	background-image: url('./assets/images/background.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -105,7 +106,7 @@ body {
 	#app {
 		.header {
 			padding-bottom: 16px;
-			background-image: url('./assets/images/background.jpg');
+			background-image: url('./assets/images/background.png');
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
