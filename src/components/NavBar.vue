@@ -58,7 +58,7 @@ nav {
         margin: 15px 25px;
         padding: 10px;
         outline: none;
-        color: #174e2f;
+        color: black;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 1px;

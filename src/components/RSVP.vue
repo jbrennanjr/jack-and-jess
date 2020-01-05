@@ -1,5 +1,6 @@
 <template>
 <div class="page-content">
+    <h3>RSVP</h3>
     <p>Submit the form once for each guest</p>
     <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="rsvp" />

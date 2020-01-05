@@ -21,6 +21,7 @@
 
     h3 {
         margin-top: 0px;
+        text-align: center;
     }
 }
 .photos {
@@ -46,6 +47,16 @@
         &.fenway {
             background-image: url('../assets/images/about-us/fenway.png');
             border-radius: 0px 0px 5px 0px;
+        }
+    }
+}
+
+@media only screen and (max-device-width : 700px) {
+    .photos {
+        .photo {
+            &.fenway {
+                border-radius: 0px;
+            }
         }
     }
 }
