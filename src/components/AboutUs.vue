@@ -50,6 +50,16 @@
     }
 }
 
+@media only screen and (max-device-width : 700px) {
+    .photos {
+        .photo {
+            &.fenway {
+                border-radius: 0px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-device-width : 500px) {
     .photos {
         display: block;

@@ -73,7 +73,7 @@ body {
 		border-radius: 5px;
 		font-family: 'Raleway', sans-serif;
 		letter-spacing: 2px;
-		color: #174e2f;
+		color: black;
 	}
 }
 
@@ -101,6 +101,7 @@ body {
 @media only screen and (max-device-width : 700px) {
 	body {
 		background-image: none;
+		margin-bottom: 0px;
 	}
 
 	#app {
@@ -135,6 +136,7 @@ body {
 			width: 100%;
 			border-radius: 0px;
 			margin-top: 0px;
+			box-shadow: none;
 		}
 	}
 }
