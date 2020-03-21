@@ -1,13 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
-import Lightbox from 'vue-easy-lightbox'
 import App from './App.vue'
 import routes from './routes.js'
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
-Vue.use(Lightbox);
 Vue.config.productionTip = false;
 
 const store = new Vuex.Store({

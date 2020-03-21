@@ -29,41 +29,19 @@
 </template>
 
 <style lang="less" scoped>
-.page-content {
-    padding: 20px;
-    text-align: left;
+.question-content {
+    margin: 20px;
 
-    h3 {
-        margin-top: 0px;
-        text-align: center;
+    .question {
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 5px;
+        margin-top: 20px;
     }
 
-    .question-content {
-        margin: 20px;
-
-        .question {
-            font-weight: bold;
-            font-style: italic;
-            margin-bottom: 5px;
-            margin-top: 20px;
-        }
-
-        .answer {
-            margin-top: 0px;
-            font-size: 14px;
-        }
-
-        .email {
-            color:#8c8cff;
-        }
-
-        a {
-            color: inherit;
-
-            &:hover {
-                color:#8c8cff;
-            }
-        }
+    .answer {
+        margin-top: 0px;
+        font-size: 14px;
     }
 }
 </style>
