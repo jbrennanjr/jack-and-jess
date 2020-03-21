@@ -29,22 +29,13 @@
 </template>
 
 <style lang="less" scoped>
-.page-content {
-    padding: 20px;
-    text-align: center;
+table {
+    margin-left:auto;
+    margin-right: auto;
+    text-align: left;
 
-    h3 {
-        margin-top: 0px;
-    }
-
-    table {
-        margin-left:auto;
-        margin-right: auto;
-        text-align: left;
-
-        td {
-            padding: 20px;
-        }
+    td {
+        padding: 20px;
     }
 }
 </style>

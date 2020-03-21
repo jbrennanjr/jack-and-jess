@@ -1,45 +1,37 @@
 <template>
-    <div class="page-content">
+    <div class="page-content no-padding">
         <div class="content-left">
             <ul class="location-list">
-                <li style="margin-bottom: 30px;">
+                <li style="margin-bottom: 50px;">
                     <h3>Ceremony & Reception Venue</h3>
                     <a class="location-name" target="_blank" href="http://harringtonfarm.com/">Harrington Farm</a><span class="map-marker">B</span>
                     <address>
-                        <blockquote>
-                            <a class="location-address" target="_blank" href="https://goo.gl/maps/veHPpePEVXiVvHzG9">178 Westminster Rd, Princeton, MA 01541</a>
-                        </blockquote>
+                        <a class="location-address" target="_blank" href="https://goo.gl/maps/veHPpePEVXiVvHzG9">178 Westminster Rd, Princeton, MA 01541</a>
                     </address>
                 </li>
-                <li style="margin-bottom: 30px;">
+                <li style="margin-bottom: 50px;">
                     <h3>Suggested Lodging</h3>
                     <a class="location-name" target="_blank" href="https://doubletree3.hilton.com/en/hotels/massachusetts/doubletree-by-hilton-hotel-leominster-ORHLEDT/index.html">DoubleTree by Hilton Hotel</a><span class="map-marker">A</span>
                     <address>
-                        <blockquote>
-                            <a class="location-address" target="_blank" href="https://goo.gl/maps/h1yZS4gq5yk6zAUx8">99 Erdman Way, Leominster, MA 01453</a>
-                            <p class="phone-number">(978) 534-9000</p>
-                        </blockquote>
+                        <a class="location-address" target="_blank" href="https://goo.gl/maps/h1yZS4gq5yk6zAUx8">99 Erdman Way, Leominster, MA 01453</a>
+                        <p class="phone-number">(978) 534-9000</p>
                     </address>
                     <p>Please use code "TBD" to reserve a room at our discounted rate.</p>
                 </li>
-                <li>
+                <li style="margin-bottom: 30px;">
                     <h3>Other Lodging Options</h3>
                     <p>Please note that shuttle service will not be available from these locations.</p>
                     <a class="location-name" href="https://www.marriott.com/hotels/travel/bossd-springhill-suites-devens-common-center/">SpringHill Suites by Marriott</a>
                     <address>
-                        <blockquote>
-                            <a class="location-address" href="https://goo.gl/maps/ABAqf1ZwgSsryVby6">27 Andrews Pkwy, Devens, MA 01434</a>
-                            <p class="phone-number">(978) 772-3030</p>
-                        </blockquote>
+                        <a class="location-address" href="https://goo.gl/maps/ABAqf1ZwgSsryVby6">27 Andrews Pkwy, Devens, MA 01434</a>
+                        <p class="phone-number">(978) 772-3030</p>
                     </address>
                 </li>
                 <li>
                     <a class="location-name" href="https://hiltongardeninn3.hilton.com/en/hotels/massachusetts/hilton-garden-inn-devens-common-ORHDCGI/index.html?SEO_id=GMB-HI-ORHDCGI">Hilton Garden Inn</a>
                     <address>
-                        <blockquote>
-                            <a class="location-address" href="https://goo.gl/maps/ygXd3GAbSkMFQkcu6">59 Andrews Pkwy, Devens, MA 01434</a>
-                            <p class="phone-number">(978) 772-0600</p>
-                        </blockquote>
+                        <a class="location-address" href="https://goo.gl/maps/ygXd3GAbSkMFQkcu6">59 Andrews Pkwy, Devens, MA 01434</a>
+                        <p class="phone-number">(978) 772-0600</p>
                     </address>
                 </li>
             </ul>
@@ -86,26 +78,29 @@
                 margin-bottom: 15px;
             }
 
-            p {
-                margin-left: 10px;
-            }
-
             .location-name {
                 font-weight: 700;
+                text-decoration: none;
                 color: inherit;
-                margin-left: 10px;
 
                 &:hover {
-                    color: #8c8cff;
+                    text-decoration: underline;
+                    color: blue;
                 }
             }
 
             .location-address {
+                text-decoration: none;
                 color: inherit;
 
                 &:hover {
-                    color: #8c8cff;
+                    text-decoration: underline;
+                    color: blue;
                 }
+            }
+
+            address {
+                margin-top: 10px;
             }
 
             .phone-number {

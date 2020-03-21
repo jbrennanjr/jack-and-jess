@@ -17,9 +17,9 @@
             <p class="question">Do you have a hotel block for guests? Where do you recommend I stay?</p>
             <p class="answer">Yes we have a number of rooms blocked at the DoubleTree by Hilton in Leominster. Address and directions are available in the <router-link href="#" to="/travel">Travel</router-link> tab.</p>
             <p class="question">How do I get to the venue?</p>
-            <p class="answer">TBD</p>
+            <p class="answer">We will be providing a shuttle service to the venue from our preferred lodging location. Otherwise guests will have to find their own transportation.</p>
             <p class="question">Is there parking available near the ceremony and reception venue?</p>
-            <p class="answer">TBD</p>
+            <p class="answer">Yes there is a parking lot at the venue, however we encourage guests to make use of our shuttle service.</p>
             <p class="question">What time should I arrive?</p>
             <p class="answer">TBD</p>
             <p class="question">If I still have questions, what is the best way to contact you?</p>
@@ -29,41 +29,19 @@
 </template>
 
 <style lang="less" scoped>
-.page-content {
-    padding: 20px;
-    text-align: left;
+.question-content {
+    margin: 20px;
 
-    h3 {
-        margin-top: 0px;
-        text-align: center;
+    .question {
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 5px;
+        margin-top: 20px;
     }
 
-    .question-content {
-        margin: 20px;
-
-        .question {
-            font-weight: bold;
-            font-style: italic;
-            margin-bottom: 5px;
-            margin-top: 20px;
-        }
-
-        .answer {
-            margin-top: 0px;
-            font-size: 14px;
-        }
-
-        .email {
-            color:#8c8cff;
-        }
-
-        a {
-            color: inherit;
-
-            &:hover {
-                color:#8c8cff;
-            }
-        }
+    .answer {
+        margin-top: 0px;
+        font-size: 14px;
     }
 }
 </style>

@@ -15,15 +15,10 @@
 </template>
 
 <style lang="less" scoped>
-.page-content {
-    padding: 20px;
-    text-align: left;
-
-    h3 {
-        margin-top: 0px;
-        text-align: center;
-    }
+p {
+    padding-bottom: 20px;
 }
+
 .photos {
     display: flex;
     flex-direction: row;

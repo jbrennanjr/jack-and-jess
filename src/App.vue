@@ -42,7 +42,7 @@ body {
 		text-align: center;
 
 		.header-content {
-			color: #fff;
+			color: #2a7e92;
 			text-align: center;
 			font-size: 70px;
 			padding: 30px;
@@ -74,6 +74,20 @@ body {
 		font-family: 'Raleway', sans-serif;
 		letter-spacing: 2px;
 		color: black;
+
+		.page-content {
+			padding: 20px;
+			text-align: left;
+
+			h3 {
+				margin-top: 0px;
+				text-align: center;
+			}
+		}
+
+		.no-padding {
+			padding: 0px;
+		}
 	}
 }
 

@@ -90,9 +90,11 @@ module.exports = {
 p {
     margin: 0px;
     font-size: 14px;
+    text-align: center;
 
     &.disclaimer {
         padding: 5px;
+        text-align: left;
     }
 
     &.error {
@@ -100,7 +102,6 @@ p {
         height: 15px;
         color: red;
         margin: 15px 0px;
-        text-align: center;
     }
 }
 
