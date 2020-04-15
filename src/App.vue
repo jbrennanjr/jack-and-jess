@@ -6,6 +6,10 @@
 			</div>
 			<nav-bar></nav-bar>
 		</div>
+		<div class="mobile-header">
+			<div class="mobile-header-content">J + J</div>
+			<nav-bar></nav-bar>
+		</div>
 		<div class="body">
 			<router-view></router-view>
 		</div>
@@ -38,6 +42,16 @@ body {
 }
 
 #app {
+	.mobile-header {
+		display: none;
+
+		.mobile-header-content {
+			font-family: 'Allura', sans-serif;
+			font-size: 40px;
+			margin-left: 20px;
+		}
+	}
+
 	.header {
 		text-align: center;
 
@@ -120,30 +134,12 @@ body {
 
 	#app {
 		.header {
-			padding-bottom: 16px;
-			background-image: url('./assets/images/background.png');
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
+			display: none;
+		}
 
-			.header-content {
-				font-size: 50px;
-				padding: 0px;
-				padding-top: 20px;
-
-				div {
-					display: block;
-				}
-
-				.ampersand {
-					margin: 0px 15px;
-					font-size: 35px;
-				}
-
-				.no-wrap {
-					white-space: nowrap;
-				}
-			}
+		.mobile-header {
+			display: block;
+			height: 50px;
 		}
 
 		.body {
@@ -151,6 +147,12 @@ body {
 			border-radius: 0px;
 			margin-top: 0px;
 			box-shadow: none;
+			min-height: 700px;
+
+			background-image: url('./assets/images/background.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: top;
 		}
 	}
 }

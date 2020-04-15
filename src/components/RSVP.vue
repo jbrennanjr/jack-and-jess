@@ -80,13 +80,6 @@ module.exports = {
 </script>
 
 <style lang="less" scoped>
-.page-content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 p {
     margin: 0px;
     font-size: 14px;
@@ -269,6 +262,10 @@ p {
 @media only screen and (max-device-width : 480px) {
     .rsvp-form {
         width: 80%;
+
+        #full-name {
+            background-color: transparent;
+        }
     }
 }
 </style>
