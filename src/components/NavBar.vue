@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="mobile-header"><div class="icon-hamburger" @click="toggleNav"></div></div>
+        <div class="mobile-nav"><div class="icon-hamburger" @click="toggleNav"></div></div>
         <nav v-show="$store.state.showNav" class="navbar mobile">
             <router-link class="nav-link" href="#" to="/">Home</router-link>
             <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
@@ -36,7 +36,7 @@ module.exports = {
 </script>
 
 <style lang="less" scoped>
-.mobile-header {
+.mobile-nav {
     display: none;
 
     .icon-hamburger {
@@ -151,7 +151,7 @@ nav {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 600px) {
-    .mobile-header {
+    .mobile-nav {
         display: block;
         width: 100%;
         height:50px;
@@ -178,10 +178,5 @@ nav {
             display: none;
         }
     }
-}
-
-/* Tablets (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
-    
 }
 </style>

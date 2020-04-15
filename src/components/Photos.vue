@@ -33,8 +33,6 @@ export default {
 }
 
 .photographer {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    margin-top: 50px;
 }
 </style>
