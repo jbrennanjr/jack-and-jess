@@ -2,6 +2,8 @@
     <div class="page-content">
         <h3>Frequently Asked Questions</h3>
         <div class="question-content">
+            <p class="question">What time should we arrive?</p>
+            <p class="answer">The ceremony is scheduled to start at 4:30pm but please make sure you have time to settle in beforehand.</p>
             <p class="question">Is there a required dress code?</p>
             <p class="answer">The dress code for our wedding is semi-formal/cocktail attire.  Ladies should wear cocktail dresses, and the gentlemen should wear a suit and tie or a sports coat.</p>
             <p class="question">How do I RSVP?</p>
@@ -20,8 +22,6 @@
             <p class="answer">We will be providing a shuttle service to the venue from our preferred lodging location. Otherwise guests will have to find their own transportation.</p>
             <p class="question">Is there parking available near the ceremony and reception venue?</p>
             <p class="answer">Yes there is a parking lot at the venue, however we encourage guests to make use of our shuttle service.</p>
-            <p class="question">What time should I arrive?</p>
-            <p class="answer">TBD</p>
             <p class="question">If I still have questions, what is the best way to contact you?</p>
             <p class="answer">If you need to get in touch with us for any reason don't hesitate to call or text! You can also email us at <span class="email">jackbrennan.jessradin@gmail.com</span></p>
         </div>
