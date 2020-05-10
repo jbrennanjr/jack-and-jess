@@ -2,17 +2,16 @@
     <div class="page-content">
         <h3>Photo Albums</h3>
         <div class="album">
-            <a class="album-link" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">Engagement Photos - Arnold Arboretum</a>
+            <a class="album-header" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">Engagement Photos - Arnold Arboretum</a>
             <div class="photos">
                 <div class="photo engagement1"></div>
                 <div class="photo engagement2"></div>
                 <div class="photo engagement3"></div>
             </div>
             <p>
-                These photos were taken at the <a href="https://www.arboretum.harvard.edu/" target="_blank">Arnold Arboretum</a> in October 2019.
-                The time of year was able to give us some great color in our photos.
+                These photos were taken at the Arnold Arboretum in October 2019. The time of year was able to give us some great color in our photos.
             </p>
-            <a href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">View full album</a>
+            <a class="album-link" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">View full album</a>
         </div>
         <div class="coming-soon">We will add photo albums for the ceremony and reception after the wedding. Be sure to check back later!</div>
         <div class="photographer">Photos by Ginny Cummings - <a href="https://www.capturedbyginny.com" target="_blank">Captured By Ginny</a></div>
@@ -64,7 +63,7 @@ export default {
         }
     }
 
-    .album-link {
+    .album-header {
         display: inline-block;
         font-weight: bold;
         padding-left: 20px;
@@ -77,7 +76,7 @@ export default {
         }
     }
 
-    p, a {
+    p, .album-link {
         padding-left: 20px;
     }
 }
