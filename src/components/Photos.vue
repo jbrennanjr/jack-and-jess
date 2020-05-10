@@ -85,7 +85,7 @@ export default {
     padding-left: 20px;
 }
 
-@media only screen and (max-device-width : 500px) {
+@media only screen and (max-device-width : 900px) {
     .album {
         .photos {
             display: block;
@@ -93,8 +93,18 @@ export default {
 
             .photo {
                 display: block;
-                height: 200px;
+                height: 250px;
                 width: 100% !important;
+
+                &.engagement1 {
+                    background-position: 0% 70%;
+                }
+                &.engagement2 {
+                    background-position: 0% 50%;
+                }
+                &.engagement3 {
+                    background-position: 0% 10%;
+                }
             }
         }
     }
