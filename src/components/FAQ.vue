@@ -47,7 +47,7 @@
 
 @media only screen and (max-device-width : 700px) {
     .page-content {
-        padding: 20px 0px;
+        padding: 20px 0px !important;
         margin: 0px 20px;
         background: rgba(255, 255, 255, 0.1);
 
