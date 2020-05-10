@@ -12,6 +12,7 @@
                 These photos were taken at the <a href="https://www.arboretum.harvard.edu/" target="_blank">Arnold Arboretum</a> in October 2019.
                 The time of year was able to give us some great color in our photos.
             </p>
+            <a href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">View full album</a>
         </div>
         <div class="coming-soon">We will add photo albums for the ceremony and reception after the wedding. Be sure to check back later!</div>
         <div class="photographer">Photos by Ginny Cummings - <a href="https://www.capturedbyginny.com" target="_blank">Captured By Ginny</a></div>
@@ -68,7 +69,7 @@ export default {
         padding-left: 20px;
     }
 
-    p {
+    p, a {
         padding-left: 20px;
     }
 }
@@ -82,5 +83,20 @@ export default {
 .photographer {
     margin-top: 50px;
     padding-left: 20px;
+}
+
+@media only screen and (max-device-width : 500px) {
+    .album {
+        .photos {
+            display: block;
+            height: inherit;
+
+            .photo {
+                display: block;
+                height: 200px;
+                width: 100% !important;
+            }
+        }
+    }
 }
 </style>
