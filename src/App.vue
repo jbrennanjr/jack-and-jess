@@ -85,9 +85,10 @@ body {
 		box-shadow: inset 0px 0px 100px #d9ffff;
 		box-shadow: 0 0 20px #999;
 		border-radius: 5px;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Quattrocento', serif;
 		letter-spacing: 2px;
 		color: black;
+		background-color: #b7d4b7;
 
 		.page-content {
 			padding: 20px;
@@ -96,6 +97,7 @@ body {
 			h3 {
 				margin-top: 0px;
 				text-align: center;
+				font-family: 'Raleway', sans-serif;
 			}
 		}
 
