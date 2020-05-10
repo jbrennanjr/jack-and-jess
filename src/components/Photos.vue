@@ -65,8 +65,16 @@ export default {
     }
 
     .album-link {
+        display: inline-block;
         font-weight: bold;
         padding-left: 20px;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+            color: blue;
+        }
     }
 
     p, a {
