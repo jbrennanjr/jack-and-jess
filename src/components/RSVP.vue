@@ -23,15 +23,15 @@
         <div class="radio-group meal-group">
             <div class="radio-item">
                 <input type="radio" id="chicken" name="dinner-chicken" value="chicken" v-model="meal">
-                <label for="chicken">Chicken</label>
+                <label for="chicken">Rosemary garlic rubbed chicken</label>
             </div>
             <div class="radio-item">
                 <input type="radio" id="steak" name="dinner-steak" value="steak" v-model="meal">
-                <label for="steak">Steak</label>
+                <label for="steak">Sliced Tournedo beef tenderloin</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="other" name="dinner-other" value="other" v-model="meal">
-                <label for="other">Other</label>
+                <input type="radio" id="salmon" name="dinner-salmon" value="salmon" v-model="meal">
+                <label for="salmon">Chardonnay poached salmon</label>
             </div>
             <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
@@ -106,6 +106,10 @@ p {
     margin-left: auto;
     margin-right: auto;
 
+    #full-name {
+        background-color: transparent;
+    }
+
     .text-input-field {
         display: flex;
         flex-flow: column-reverse;
@@ -119,7 +123,7 @@ p {
         input {
             font-size: 1.5em;
             border: 0;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid black;
             font-family: inherit;
             -webkit-appearance: none;
             border-radius: 0;
@@ -201,7 +205,7 @@ p {
             top: 0;
             width: 18px;
             height: 18px;
-            border: 1px solid #237546;
+            border: 1px solid #4e664e;
             border-radius: 100%;
             background: #fff;
         }
@@ -210,7 +214,7 @@ p {
             content: '';
             width: 12px;
             height: 12px;
-            background: #237546;
+            background: #4e664e;
             position: absolute;
             top: 4px;
             left: 4px;
@@ -248,10 +252,16 @@ p {
             }
 
             &.sumbit-button {
-                background-color: #69ac9a;
+                background-color: transparent;
+                border: 1px solid #1a221a;
+
+                transition: all .2s ease;
+                transform: scale(1);
 
                 &:hover {
-                    background-color: #488e8c;
+                    transition: all .2s ease;
+                    transform: scale(1.1);
+                    background-color: #69A4B2;
                 }
             }
         }
@@ -262,10 +272,6 @@ p {
 @media only screen and (max-device-width : 480px) {
     .rsvp-form {
         width: 80%;
-
-        #full-name {
-            background-color: transparent;
-        }
     }
 }
 </style>

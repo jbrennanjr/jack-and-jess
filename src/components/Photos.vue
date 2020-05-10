@@ -3,6 +3,11 @@
         <h3>Photo Albums</h3>
         <div class="album">
             <a class="album-link" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">Engagement Photos - Arnold Arboretum</a>
+            <div class="photos">
+                <div class="photo engagement1"></div>
+                <div class="photo engagement2"></div>
+                <div class="photo engagement3"></div>
+            </div>
             <p>
                 These photos were taken at the <a href="https://www.arboretum.harvard.edu/" target="_blank">Arnold Arboretum</a> in October 2019.
                 The time of year was able to give us some great color in our photos.
@@ -19,20 +24,63 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.page-content {
+    padding: 20px 0px !important;
+}
+
 .album {
     text-align: left;
 
+    .photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 300px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        .photo {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+
+            &.engagement1 {
+                background-image: url('../assets/images/photos/engagement1.jpg');
+                background-position: 15%;
+                width: 40%;
+            }
+            &.engagement2 {
+                background-image: url('../assets/images/photos/engagement2.jpg');
+                background-position: 100%;
+                width: 25%;
+            }
+            &.engagement3 {
+                background-image: url('../assets/images/photos/engagement3.jpg');
+                background-position: 0%;
+                width: 40%;
+            }
+        }
+    }
+
     .album-link {
         font-weight: bold;
+        padding-left: 20px;
+    }
+
+    p {
+        padding-left: 20px;
     }
 }
 
 .coming-soon {
     font-weight: bold;
     margin-top: 20px;
+    padding-left: 20px;
 }
 
 .photographer {
     margin-top: 50px;
+    padding-left: 20px;
 }
 </style>
