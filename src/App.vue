@@ -89,6 +89,7 @@ body {
 		letter-spacing: 2px;
 		color: black;
 		background-color: #b7d4b7;
+		line-height: 1.3;
 
 		.page-content {
 			padding: 20px;
