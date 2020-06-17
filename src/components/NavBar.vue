@@ -2,14 +2,14 @@
     <div>
         <div class="mobile-nav"><div class="icon-hamburger" @click="toggleNav"></div></div>
         <nav v-show="$store.state.showNav" class="navbar mobile">
-            <router-link class="nav-link" href="#" to="/">Home</router-link>
-            <router-link class="nav-link" href="#" to="/covid-19">COVID-19</router-link>
-            <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
-            <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
-            <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
-            <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
-            <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
-            <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/">Home</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/covid-19">COVID-19</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/about-us">About Us</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/photos">Photos</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/travel">Travel</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/registry">Registry</router-link></div>
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/faq">FAQ</router-link></div>
         </nav>
 
         <nav class="navbar desktop">
@@ -52,6 +52,16 @@ module.exports = {
 nav {
     display: block;
     background: rgba(255, 255, 255, 0.2);
+
+    &.mobile {
+        display: none;
+
+        .nav-link-container {
+            width: 100%;
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
 
     a {
         position: relative;
@@ -128,7 +138,7 @@ nav {
     nav {
         a {
             padding: 5px;
-            margin: 15px 5px;
+            margin: 15px 10px;
         }
     }
 }
@@ -137,21 +147,13 @@ nav {
     nav {
         a {
             font-size: 13px;
-            margin: 15px 5px;
-        }
-    }
-}
-
-@media (max-device-width : 700px) {
-    nav {
-        a {
-            color: #ecf4f6;
+            margin: 15px 10px;
         }
     }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width : 600px) {
+@media only screen and (max-device-width : 700px) {
     .mobile-nav {
         display: block;
         width: 100%;
@@ -173,10 +175,15 @@ nav {
             margin: 15px 25px;
             padding: 10px;
             font-size: 1em;
+            color: #ecf4f6;
         }
 
         &.desktop {
             display: none;
+        }
+
+        &.mobile {
+            display: block;
         }
     }
 }
