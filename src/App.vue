@@ -3,11 +3,12 @@
 		<div class="header">
 			<div class="header-content">
 				<div class="no-wrap">Jessica Radin</div><div class="ampersand">&</div><div class="no-wrap">Jack Brennan</div>
+				<div class="sub-header no-wrap">August 23rd, 2020</div>
 			</div>
 			<nav-bar></nav-bar>
 		</div>
 		<div class="mobile-header">
-			<div class="mobile-header-content">J + J</div>
+			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">Aug. 23rd</span></div>
 			<nav-bar></nav-bar>
 		</div>
 		<div class="body">
@@ -49,6 +50,10 @@ body {
 			font-family: 'Allura', sans-serif;
 			font-size: 40px;
 			margin-left: 20px;
+
+			.mobile-header-date {
+				font-size: 30px;
+			}
 		}
 	}
 
@@ -69,6 +74,11 @@ body {
 			.ampersand {
 				margin: 0px 20px;
 				font-size: 50px;
+			}
+
+			.sub-header {
+				display: block;
+				font-size: 40px;
 			}
 		}
 	}
