@@ -9,7 +9,7 @@
                 <div class="photo engagement3"></div>
             </div>
             <p>
-                These photos were taken at the Arnold Arboretum in October 2019. The time of year was able to give us some great color in our photos.
+                These photos were taken at the Arnold Arboretum in October 2019, only a month after our engagement in September.
             </p>
             <a class="album-link" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">View full album</a>
         </div>
