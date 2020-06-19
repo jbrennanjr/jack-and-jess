@@ -10,8 +10,13 @@
             guidelines which indicate our wedding would occur during the final recovery phase.
         </p>
         <p>
+            We are moving our RSVP dealine back to July 26th to allow our guests some extra time for planning.
+        </p>
+        <br />
+        <p>
             Please check back here for the most up to date information. We will be updating this page as soon as we know more.
         </p>
+        <br />
         <p>
             Thank you so much for your patience!
         </p>
