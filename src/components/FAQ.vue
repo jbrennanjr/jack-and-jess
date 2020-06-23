@@ -9,7 +9,7 @@
             <p class="question">How do I RSVP?</p>
             <p class="answer">You can RSVP through the form on this website, or you can call/text or email us as well. Just please be sure to include your meal choices!</p>
             <p class="question">When is the RSVP deadline?</p>
-            <p class="answer">Please have your RSVP submitted by July 26th to allow up time to prepare.</p>
+            <p class="answer">Please have your RSVP submitted by July 26th to allow us time to prepare.</p>
             <p class="question">Where are the ceremony and the reception taking place?</p>
             <p class="answer">Both the ceremony and reception will be held at Harrington Farm at 178 Westminster Rd. Princeton, MA 01541</p>
             <p class="question">Will the ceremony and reception be indoors or outdoors?</p>
