@@ -21,19 +21,19 @@
                 <label for="decline">Sadly Decline</label>
             </div>
         </div>
-        <p>Reception Dinner choices:</p>
+        <p>Please select your entree preference:</p>
         <div class="radio-group meal-group">
             <div class="radio-item">
                 <input type="radio" id="chicken" name="dinner-chicken" value="chicken" v-model="meal">
-                <label for="chicken">Rosemary garlic rubbed chicken</label>
+                <label for="chicken">Chicken</label>
             </div>
             <div class="radio-item">
                 <input type="radio" id="steak" name="dinner-steak" value="steak" v-model="meal">
-                <label for="steak">Sliced Tournedo beef tenderloin</label>
+                <label for="steak">Beef</label>
             </div>
             <div class="radio-item">
                 <input type="radio" id="salmon" name="dinner-salmon" value="salmon" v-model="meal">
-                <label for="salmon">Chardonnay poached salmon</label>
+                <label for="salmon">Salmon</label>
             </div>
             <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
