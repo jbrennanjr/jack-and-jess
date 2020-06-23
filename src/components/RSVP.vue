@@ -28,8 +28,8 @@
                 <label for="chicken">Chicken</label>
             </div>
             <div class="radio-item">
-                <input type="radio" id="steak" name="dinner-steak" value="steak" v-model="meal">
-                <label for="steak">Beef</label>
+                <input type="radio" id="beef" name="dinner-beef" value="beef" v-model="meal">
+                <label for="beef">Beef</label>
             </div>
             <div class="radio-item">
                 <input type="radio" id="salmon" name="dinner-salmon" value="salmon" v-model="meal">
