@@ -3,14 +3,17 @@
 		<div class="header">
 			<div class="header-content">
 				<div class="no-wrap">Jessica Radin</div><div class="ampersand">&</div><div class="no-wrap">Jack Brennan</div>
-				<div class="sub-header no-wrap">August 23rd, 2020</div>
+				<div class="sub-header no-wrap">Summer 2021</div>
 			</div>
 			<nav-bar></nav-bar>
 		</div>
 		<div class="mobile-header">
-			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">Aug. 23rd</span></div>
+			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">Summer 2021</span></div>
 			<nav-bar></nav-bar>
 		</div>
+		<div class="banner">
+            <span>Due to COVID-19, we have decided to postpone our wedding date. Please check <router-link href="#" to="/covid-19">here</router-link> for more details.</span>
+        </div>
 		<div class="body">
 			<router-view></router-view>
 		</div>
@@ -83,6 +86,24 @@ body {
 		}
 	}
 
+	.banner {
+		width: 55%;
+		font-family: 'Quattrocento', serif;
+		letter-spacing: 2px;
+		color: black;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 16px;
+		line-height: 1.3;
+		background-color: cornsilk;
+		border-radius: 5px;
+
+		span {
+			padding: 20px;
+			display: inline-block;
+		}
+	}
+
 	.body {
 		position: relative;
 		width: 55%;
@@ -121,6 +142,7 @@ body {
 
 @media (max-device-width : 1500px) {
 	#app {
+		.banner,
 		.body {
 			width: 75%;
 		}
@@ -153,6 +175,20 @@ body {
 		.mobile-header {
 			display: block;
 			height: 50px;
+		}
+
+		.banner {
+			width: 100%;
+			font-family: 'Quattrocento', serif;
+			letter-spacing: 2px;
+			color: black;
+			line-height: 1.3;
+			background-color: cornsilk;
+			margin-top: 0px;
+
+			span {
+				padding: 10px;
+			}
 		}
 
 		.body {

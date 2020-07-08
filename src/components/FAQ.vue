@@ -2,14 +2,18 @@
     <div class="page-content">
         <h3>Frequently Asked Questions</h3>
         <div class="question-content">
+            <p class="question">When will the new date be?</p>
+            <p class="answer">We are still weighing our options with the dates our venue has given us. We will have our decision posted soon!</p>
+            <p class="question">What if I already RSVP'd?</p>
+            <p class="answer">If you already RSVP'd thank you! We will likely need everyone to RSVP again once we have details on our new date.</p>
             <p class="question">What time should we arrive?</p>
             <p class="answer">The ceremony is scheduled to start at 4:30pm but we suggest you arrive 15 minute beforehand to settle in.</p>
             <p class="question">Is there a required dress code?</p>
             <p class="answer">The dress code for our wedding is semi-formal/cocktail attire.  Ladies should wear cocktail dresses, and the gentlemen should wear a suit and tie or a sports coat.</p>
-            <p class="question">How do I RSVP?</p>
-            <p class="answer">You can RSVP through the form on this website, or you can call/text or email us as well. Just please be sure to include your meal choices!</p>
-            <p class="question">When is the RSVP deadline?</p>
-            <p class="answer">Please have your RSVP submitted by July 26th to allow us time to prepare.</p>
+            <!-- <p class="question">How do I RSVP?</p>
+            <p class="answer">You can RSVP through the form on this website, or you can call/text or email us as well. Just please be sure to include your meal choices!</p> -->
+            <!-- <p class="question">When is the RSVP deadline?</p>
+            <p class="answer">Please have your RSVP submitted by July 26th to allow us time to prepare.</p> -->
             <p class="question">Where are the ceremony and the reception taking place?</p>
             <p class="answer">Both the ceremony and reception will be held at Harrington Farm at 178 Westminster Rd. Princeton, MA 01541</p>
             <p class="question">Will the ceremony and reception be indoors or outdoors?</p>
