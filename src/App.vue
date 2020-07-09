@@ -3,12 +3,12 @@
 		<div class="header">
 			<div class="header-content">
 				<div class="no-wrap">Jessica Radin</div><div class="ampersand">&</div><div class="no-wrap">Jack Brennan</div>
-				<div class="sub-header no-wrap">Summer 2021</div>
+				<div class="sub-header no-wrap">August 22, 2021</div>
 			</div>
 			<nav-bar></nav-bar>
 		</div>
 		<div class="mobile-header">
-			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">Summer 2021</span></div>
+			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">9.22.21</span></div>
 			<nav-bar></nav-bar>
 		</div>
 		<div class="banner">
