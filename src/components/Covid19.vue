@@ -17,12 +17,7 @@
             Unfortunately due to the outlook of the COVID-19 pandemic, we have decided that postponing our wedding was necessary to ensure the safety of our loved ones.
         </p>
         <p>
-            Our venue has officially given us the option to reschedule our wedding to a summer date in 2021. While the exact date 
-            is as of now undecided, we will have that information available soon.
-        </p>
-        <br />
-        <p>
-            Please check back here for the most up to date information. We will be updating this page as soon as we know more.
+            Our venue has officially given us the option to reschedule our wedding, and we have decided to move our date to August 22, 2021!
         </p>
         <br />
         <p>

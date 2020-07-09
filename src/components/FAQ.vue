@@ -3,9 +3,9 @@
         <h3>Frequently Asked Questions</h3>
         <div class="question-content">
             <p class="question">When will the new date be?</p>
-            <p class="answer">We are still weighing our options with the dates our venue has given us. We will have our decision posted soon!</p>
+            <p class="answer">We have rescheduled our special day for August 22, 2021. Hope to see you there!</p>
             <p class="question">What if I already RSVP'd?</p>
-            <p class="answer">If you already RSVP'd thank you! We will likely need everyone to RSVP again once we have details on our new date.</p>
+            <p class="answer">If you already RSVP'd thank you! We will likely need everyone to RSVP again once we have more details on our new date.</p>
             <p class="question">What time should we arrive?</p>
             <p class="answer">The ceremony is scheduled to start at 4:30pm but we suggest you arrive 15 minute beforehand to settle in.</p>
             <p class="question">Is there a required dress code?</p>
