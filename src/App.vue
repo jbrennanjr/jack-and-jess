@@ -8,7 +8,7 @@
 			<nav-bar></nav-bar>
 		</div>
 		<div class="mobile-header">
-			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">9.22.21</span></div>
+			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">8.22.21</span></div>
 			<nav-bar></nav-bar>
 		</div>
 		<div class="banner">
