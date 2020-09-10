@@ -1,7 +1,7 @@
 <template>
 <div class="page-content">
     <h3>RSVP</h3>
-    <p><strong>Due to the COVID-19 pandemic we are pushing our RSVP deadline back to July 26th</strong></p>
+    <p><strong>If you already RSVP'd for our 2020 date, please RSVP again for 2021.</strong></p>
     <br />
     <p>Submit the form once for each guest</p>
     <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">

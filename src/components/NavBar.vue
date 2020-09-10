@@ -3,22 +3,20 @@
         <div class="mobile-nav"><div class="icon-hamburger" @click="toggleNav"></div></div>
         <nav v-show="$store.state.showNav" class="navbar mobile">
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/">Home</router-link></div>
-            <!-- <div class="nav-link-container"><router-link class="nav-link" href="#" to="/covid-19">COVID-19</router-link></div> -->
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/about-us">About Us</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/photos">Photos</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/travel">Travel</router-link></div>
-            <!-- <div class="nav-link-container"><router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link></div> -->
+            <div class="nav-link-container"><router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/registry">Registry</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/faq">FAQ</router-link></div>
         </nav>
 
         <nav class="navbar desktop">
             <router-link class="nav-link" href="#" to="/">Home</router-link>
-            <!-- <router-link class="nav-link" href="#" to="/covid-19">COVID-19</router-link> -->
             <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
             <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
             <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
-            <!-- <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link> -->
+            <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
             <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
             <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>
         </nav>
