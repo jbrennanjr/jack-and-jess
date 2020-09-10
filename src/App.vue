@@ -12,7 +12,7 @@
 			<nav-bar></nav-bar>
 		</div>
 		<div class="banner">
-            <span>Due to COVID-19, we have decided to postpone our wedding date. Please check <router-link href="#" to="/covid-19">here</router-link> for more details.</span>
+            <span>Due to COVID-19, we have decided to postpone our wedding to 2021 - Please feel free to RSVP at any time on our site.</span>
         </div>
 		<div class="body">
 			<router-view></router-view>
