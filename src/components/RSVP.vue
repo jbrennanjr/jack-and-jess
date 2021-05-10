@@ -1,9 +1,11 @@
 <template>
 <div class="page-content">
     <h3>RSVP</h3>
-    <p><strong>If you already RSVP'd for our 2020 date, please RSVP again for 2021.</strong></p>
-    <br />
-    <p>Submit the form once for each guest</p>
+    <div class="sub-header">
+        <p><strong>If you already RSVP'd for our 2020 date, please RSVP again for 2021.</strong></p>
+        <br />
+        <p>Submit the form once for each guest</p>
+    </div>
     <form class="rsvp-form" name="rsvp" @submit="checkForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="rsvp" />
         <input type="text" name="bot-field" v-show="false">
@@ -37,6 +39,17 @@
             </div>
             <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
         </div>
+        <p>In an effort to help us book transportation, please let us know if you'd take advatage of a shuttle service between our suggested lodging and the venue:</p>
+        <div class="radio-group shuttle-group">
+            <div class="radio-item">
+                <input type="radio" id="affirmative" name="shuttle-affirmative" value="affirmative" v-model="shuttle">
+                <label for="affirmative">Yes</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="negative" name="shuttle-negative" value="negative" v-model="shuttle">
+                <label for="negative">No</label>
+            </div>
+        </div>
 
         <p class="error">{{errorText}}</p>
         <div class="submit-container">
@@ -53,6 +66,7 @@ module.exports = {
             fullName: null,
             attending: null,
             meal: null,
+            shuttle: null,
             showError: false,
             errorText: null
         }
@@ -82,10 +96,13 @@ module.exports = {
 </script>
 
 <style lang="less" scoped>
+.sub-header {
+    text-align: center;
+}
+
 p {
     margin: 0px;
     font-size: 14px;
-    text-align: center;
 
     &.disclaimer {
         padding: 5px;
@@ -254,7 +271,7 @@ p {
             }
 
             &.sumbit-button {
-                background-color: transparent;
+                background-color: #69ac9b;
                 border: 1px solid #1a221a;
 
                 transition: all .2s ease;
@@ -262,11 +279,19 @@ p {
 
                 &:hover {
                     transition: all .2s ease;
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                     background-color: #69A4B2;
                 }
             }
         }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 700px) {
+	.rsvp-form {
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
     }
 }
 

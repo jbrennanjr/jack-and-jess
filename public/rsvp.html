@@ -31,6 +31,17 @@
         </div>
         <p class="disclaimer">Please call or email us if we need to be made aware of any dietary restrictions.</p>
     </div>
+    <p>In an effort to help us book transportation, please let us know if you'd take advatage of a shuttle service between our suggested lodging and the venue:</p>
+    <div class="radio-group shuttle-group">
+        <div class="radio-item">
+            <input type="radio" id="affirmative" name="shuttle-affirmative" value="affirmative" v-model="shuttle">
+            <label for="affirmative">Yes</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="negative" name="shuttle-negative" value="negative" v-model="shuttle">
+            <label for="negative">No</label>
+        </div>
+    </div>
 
     <p class="error"></p>
     <div class="submit-container">

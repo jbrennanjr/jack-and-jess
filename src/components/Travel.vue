@@ -16,7 +16,7 @@
                         <a class="location-address" target="_blank" href="https://goo.gl/maps/h1yZS4gq5yk6zAUx8">99 Erdman Way, Leominster, MA 01453</a>
                         <p class="phone-number">(978) 534-9000</p>
                     </address>
-                    <p>Please use <a target="_blank" href="https://www.hilton.com/en/book/reservation/deeplink/?&ctyhocn=ORHLEDT&groupCode=CDTRBW&arrival=20210821&departure=20210823&cid=OM,WW,HILTONLINK,en,DirectLink&fromId=HILTONLINKDIRECT">this link</a> to reserve a room from our block at a discounted rate.</p>
+                    <p>Please use <a target="_blank" href="https://www.hilton.com/en/book/reservation/deeplink/?&ctyhocn=ORHLEDT&groupCode=CDTRBW&arrival=20210821&departure=20210823&cid=OM,WW,HILTONLINK,en,DirectLink&fromId=HILTONLINKDIRECT">this link</a> to reserve a room from our block at a discounted rate. If you plan to book at this hotel please indicate if you would utilize the shuttle service when filling our RSVP form.</p>
                 </li>
                 <li style="margin-bottom: 30px;">
                     <h3>Other Lodging Options</h3>
