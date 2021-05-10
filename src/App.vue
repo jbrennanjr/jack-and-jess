@@ -11,9 +11,6 @@
 			<div class="mobile-header-content">J + J  -  <span class="mobile-header-date">8.22.21</span></div>
 			<nav-bar></nav-bar>
 		</div>
-		<div class="banner">
-            <span>Due to COVID-19, we have decided to postpone our wedding to 2021 - Please feel free to RSVP at any time on our site.</span>
-        </div>
 		<div class="body">
 			<router-view></router-view>
 		</div>
@@ -83,24 +80,6 @@ body {
 				display: block;
 				font-size: 40px;
 			}
-		}
-	}
-
-	.banner {
-		width: 55%;
-		font-family: 'Quattrocento', serif;
-		letter-spacing: 2px;
-		color: black;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 16px;
-		line-height: 1.3;
-		background-color: cornsilk;
-		border-radius: 5px;
-
-		span {
-			padding: 20px;
-			display: inline-block;
 		}
 	}
 
@@ -175,20 +154,6 @@ body {
 		.mobile-header {
 			display: block;
 			height: 50px;
-		}
-
-		.banner {
-			width: 100%;
-			font-family: 'Quattrocento', serif;
-			letter-spacing: 2px;
-			color: black;
-			line-height: 1.3;
-			background-color: cornsilk;
-			margin-top: 0px;
-
-			span {
-				padding: 10px;
-			}
 		}
 
 		.body {
