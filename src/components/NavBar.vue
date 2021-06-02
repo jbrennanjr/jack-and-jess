@@ -6,6 +6,7 @@
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/about-us">About Us</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/photos">Photos</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/travel">Travel</router-link></div>
+            <!-- <div class="nav-link-container"><router-link class="nav-link" href="#" to="/schedule">Schedule</router-link></div> -->
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/registry">Registry</router-link></div>
             <div class="nav-link-container"><router-link class="nav-link" href="#" to="/faq">FAQ</router-link></div>
@@ -16,6 +17,7 @@
             <router-link class="nav-link" href="#" to="/about-us">About Us</router-link>
             <router-link class="nav-link" href="#" to="/photos">Photos</router-link>
             <router-link class="nav-link" href="#" to="/travel">Travel</router-link>
+            <!-- <router-link class="nav-link" href="#" to="/schedule">Schedule</router-link> -->
             <router-link class="nav-link" href="#" to="/rsvp">RSVP</router-link>
             <router-link class="nav-link" href="#" to="/registry">Registry</router-link>
             <router-link class="nav-link" href="#" to="/faq">FAQ</router-link>

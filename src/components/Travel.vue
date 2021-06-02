@@ -11,24 +11,24 @@
                 </li>
                 <li style="margin-bottom: 50px;">
                     <h3>Suggested Lodging</h3>
-                    <a class="location-name" target="_blank" href="https://doubletree3.hilton.com/en/hotels/massachusetts/doubletree-by-hilton-hotel-leominster-ORHLEDT/index.html">DoubleTree by Hilton Hotel</a><span class="map-marker">A</span>
+                    <a class="location-name" target="_blank" href="https://doubletree3.hilton.com/en/hotels/massachusetts/doubletree-by-hilton-hotel-leominster-ORHLEDT/index.html">DoubleTree by Hilton Hotel Leominster</a><span class="map-marker">A</span>
                     <address>
                         <a class="location-address" target="_blank" href="https://goo.gl/maps/h1yZS4gq5yk6zAUx8">99 Erdman Way, Leominster, MA 01453</a>
                         <p class="phone-number">(978) 534-9000</p>
                     </address>
-                    <p>Please use <a target="_blank" href="https://www.hilton.com/en/book/reservation/deeplink/?&ctyhocn=ORHLEDT&groupCode=CDTRBW&arrival=20210821&departure=20210823&cid=OM,WW,HILTONLINK,en,DirectLink&fromId=HILTONLINKDIRECT">this link</a> to reserve a room from our block at a discounted rate. If you plan to book at this hotel please indicate if you would utilize the shuttle service when filling our RSVP form.</p>
+                    <p>Please use <a target="_blank" href="https://www.hilton.com/en/book/reservation/deeplink/?&ctyhocn=ORHLEDT&groupCode=CDTRBW&arrival=20210821&departure=20210823&cid=OM,WW,HILTONLINK,en,DirectLink&fromId=HILTONLINKDIRECT">THIS LINK</a> or apply the group code "CDTRBW" to reserve a room from our block at a discounted rate. If you plan to book at this hotel please indicate if you would utilize the shuttle service when filling our RSVP form.</p>
                 </li>
                 <li style="margin-bottom: 30px;">
                     <h3>Other Lodging Options</h3>
                     <p>Please note that shuttle service will not be available from these locations.</p>
-                    <a class="location-name" href="https://www.marriott.com/hotels/travel/bossd-springhill-suites-devens-common-center/">SpringHill Suites by Marriott</a>
+                    <a class="location-name" href="https://www.marriott.com/hotels/travel/bossd-springhill-suites-devens-common-center/">Springhill Suites Devens Common Center by Marriott</a>
                     <address>
                         <a class="location-address" href="https://goo.gl/maps/ABAqf1ZwgSsryVby6">27 Andrews Pkwy, Devens, MA 01434</a>
                         <p class="phone-number">(978) 772-3030</p>
                     </address>
                 </li>
                 <li>
-                    <a class="location-name" href="https://hiltongardeninn3.hilton.com/en/hotels/massachusetts/hilton-garden-inn-devens-common-ORHDCGI/index.html?SEO_id=GMB-HI-ORHDCGI">Hilton Garden Inn</a>
+                    <a class="location-name" href="https://hiltongardeninn3.hilton.com/en/hotels/massachusetts/hilton-garden-inn-devens-common-ORHDCGI/index.html?SEO_id=GMB-HI-ORHDCGI">Hilton Garden Inn Devens Common</a>
                     <address>
                         <a class="location-address" href="https://goo.gl/maps/ygXd3GAbSkMFQkcu6">59 Andrews Pkwy, Devens, MA 01434</a>
                         <p class="phone-number">(978) 772-0600</p>
