@@ -271,16 +271,13 @@ p {
             }
 
             &.sumbit-button {
-                background-color: #2a7e92;
+                background-color: rgba(255, 255, 255, 0.0);
                 border: 1px solid #1a221a;
-
                 transition: all .2s ease;
-                transform: scale(1);
 
                 &:hover {
                     transition: all .2s ease;
-                    transform: scale(1.05);
-                    background-color: #69A4B2;
+                    background-color: #2a7e92;
                 }
             }
         }
