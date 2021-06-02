@@ -271,7 +271,7 @@ p {
             }
 
             &.sumbit-button {
-                background-color: #69ac9b;
+                background-color: #2a7e92;
                 border: 1px solid #1a221a;
 
                 transition: all .2s ease;
@@ -291,7 +291,7 @@ p {
 @media only screen and (max-device-width : 700px) {
 	.rsvp-form {
         border-radius: 5px;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.5);
     }
 }
 

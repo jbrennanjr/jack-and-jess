@@ -3,7 +3,7 @@
 		<div class="header">
 			<div class="header-content">
 				<div class="no-wrap">Jessica Radin</div><div class="ampersand">&</div><div class="no-wrap">Jack Brennan</div>
-				<div class="sub-header no-wrap">August 22, 2021</div>
+				<div class="sub-header no-wrap">August 22, 2021 - Princeton, MA</div>
 			</div>
 			<nav-bar></nav-bar>
 		</div>
@@ -87,18 +87,16 @@ body {
 		position: relative;
 		width: 55%;
 		min-height: 600px;
-		background-color: #fff;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 16px;
 		text-align:center;
-		box-shadow: inset 0px 0px 100px #d9ffff;
-		box-shadow: 0 0 20px #999;
+		box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
 		border-radius: 5px;
 		font-family: 'Quattrocento', serif;
 		letter-spacing: 2px;
 		color: black;
-		background-color: #b7d4b7;
+		background: rgba(255, 255, 255, 0.5);
 		line-height: 1.3;
 
 		.page-content {
