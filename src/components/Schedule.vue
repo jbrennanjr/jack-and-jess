@@ -5,29 +5,35 @@
         <div class="flex-container">
             <div class="event">Shuttle Departs</div>
             <div class="details">
-                <div>4:00 PM</div>
-                <div class="location">Harrington Farm <br/> 178 Westminster Rd, Princeton, MA 01541</div>
+                <div>TBD - Check back soon!</div>
+                <div class="location">
+                    DoubleTree by Hilton Hotel Leominster
+                    <br />
+                    to
+                    <br />
+                    Harrington Farm
+                </div>
             </div>
         </div>
         <div class="flex-container">
             <div class="event">Ceremony</div>
             <div class="details">
-                <div>4:30 PM</div>
-                <div class="location">Harrington Farm <br/> 178 Westminster Rd, Princeton, MA 01541</div>
+                <div>4:45 PM</div>
+                <div class="location">Harrington Farm</div>
             </div>
         </div>
         <div class="flex-container">
             <div class="event">Cocktail Hour</div>
             <div class="details">
-                <div>5:00 PM</div>
-                <div class="location">Harrington Farm <br/> 178 Westminster Rd, Princeton, MA 01541</div>
+                <div>5:15 PM</div>
+                <div class="location">Harrington Farm</div>
             </div>
         </div>
         <div class="flex-container">
-            <div class="event">Dinner & Dancing</div>
+            <div class="event">Reception</div>
             <div class="details">
-                <div>6:00 PM - 10:30 PM</div>
-                <div class="location">Harrington Farm <br/> 178 Westminster Rd, Princeton, MA 01541</div>
+                <div>6:30 PM - 10:15 PM</div>
+                <div class="location">Harrington Farm</div>
             </div>
         </div>
         <h4>Monday, August 23rd, 2021 </h4>
@@ -35,7 +41,7 @@
             <div class="event">Brunch</div>
             <div class="details">
                 <div>9:00 AM - 11:30 AM</div>
-                <div class="location">DoubleTree by Hilton Hotel Leominster <br/> 99 Erdman Way, Leominster, MA 01453</div>
+                <div class="location">DoubleTree by Hilton Hotel Leominster</div>
             </div>
         </div>
     </div>
