@@ -2,28 +2,22 @@
     <div class="page-content">
         <h3>Frequently Asked Questions</h3>
         <div class="question-content">
-            <p class="question">When is the new date?</p>
-            <p class="answer">We have rescheduled our special day for August 22, 2021. Hope to see you there!</p>
-            <p class="question">What if I already RSVP'd?</p>
-            <p class="answer">If you already RSVP'd thank you! We will need everyone to RSVP again for our new date to avoid confusion.</p>
-            <p class="question">What time should we arrive?</p>
-            <p class="answer">The ceremony is scheduled to start at 4:30pm but we suggest you arrive 15 minutes beforehand to settle in.</p>
-            <p class="question">Is there a required dress code?</p>
-            <p class="answer">The dress code for our wedding is semi-formal/cocktail attire.  Ladies should wear cocktail dresses, and the gentlemen should wear a suit and tie or a sports coat.</p>
             <p class="question">How do I RSVP?</p>
             <p class="answer">You can RSVP through the form on this website, or you can call/text or email us as well. Just please be sure to include your meal choices!</p>
             <p class="question">When is the RSVP deadline?</p>
             <p class="answer">Please have your RSVP submitted by July 25th to allow us time to prepare.</p>
-            <p class="question">Where are the ceremony and the reception taking place?</p>
-            <p class="answer">Both the ceremony and reception will be held at Harrington Farm at 178 Westminster Rd. Princeton, MA 01541</p>
+            <p class="question">What time should we arrive?</p>
+            <p class="answer">The ceremony is scheduled to start at 4:45pm but we suggest you arrive 15 minutes beforehand to settle in.</p>
             <p class="question">Will the ceremony and reception be indoors or outdoors?</p>
             <p class="answer">In the event of poor weather we will be able to accommodate and hold the ceremony inside. Otherwise we are excited for a beautiful outdoor ceremony.</p>
+            <p class="question">Is there a required dress code?</p>
+            <p class="answer">The dress code for our wedding is semi-formal/cocktail attire.  Ladies should wear cocktail dresses, and the gentlemen should wear a suit and tie or a sports coat.</p>
             <p class="question">Are kids welcome?</p>
             <p class="answer">To allow all of our guests, including parents, the chance to have an evening of relaxation, we request that the ceremony and reception be for adults only.</p>
             <p class="question">Do you have a hotel block for guests? Where do you recommend I stay?</p>
             <p class="answer">Yes we have a number of rooms blocked at the DoubleTree by Hilton in Leominster. Addresses and directions are available in the <router-link href="#" to="/travel">Travel</router-link> tab.</p>
             <p class="question">How do I get to the venue?</p>
-            <p class="answer">We will be providing a shuttle service to the venue from our preferred lodging location. Otherwise guests will have to plan for their own transportation.</p>
+            <p class="answer">We will be providing a shuttle service to the venue from our preferred lodging location, and back again at the end of the night. Otherwise guests will have to plan for their own transportation.</p>
             <p class="question">Is there parking available near the ceremony and reception venue?</p>
             <p class="answer">Yes there is a parking lot at the venue with ample space.</p>
             <p class="question">If I still have questions, what is the best way to contact you?</p>
