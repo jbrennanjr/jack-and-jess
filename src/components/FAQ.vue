@@ -8,8 +8,8 @@
             <p class="answer">Please have your RSVP submitted by July 25th to allow us time to prepare.</p>
             <p class="question">What time should we arrive?</p>
             <p class="answer">The ceremony is scheduled to start at 4:45pm but we suggest you arrive 15 minutes beforehand to settle in.</p>
-            <p class="question">Will the ceremony and reception be indoors or outdoors?</p>
-            <p class="answer">In the event of poor weather we will be able to accommodate and hold the ceremony inside. Otherwise we are excited for a beautiful outdoor ceremony.</p>
+            <p class="question">Will the wedding be indoors or outdoors?</p>
+            <p class="answer">We are hoping for good weather so we can have our ceremony outside and cocktail hour under a tent. The reception will be inside a beautiful old barn. In the event of poor weather we will be able to accommodate and host everything indoors.</p>
             <p class="question">Is there a required dress code?</p>
             <p class="answer">The dress code for our wedding is semi-formal/cocktail attire.  Ladies should wear cocktail dresses, and the gentlemen should wear a suit and tie or a sports coat.</p>
             <p class="question">Are kids welcome?</p>
