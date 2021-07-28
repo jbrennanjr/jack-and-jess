@@ -3,7 +3,7 @@
         <div class="content-top">
             <h3>Registry</h3>
             <div>
-                Your love and company on our wedding day is all we could could ask for. However if you do wish to honor us with a gift, 
+                Your love and company on our wedding day is all we could ask for. However if you do wish to honor us with a gift, 
                 we have created an online gift registry that can be found here: 
             </div>
             <a href="http://www.zola.com/registry/jessicaandjackaugust23" target="_blank">www.zola.com/registry/jessicaandjackaugust23</a>
