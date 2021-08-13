@@ -3,9 +3,9 @@
         <h3>Schedule of Events</h3>
         <h4>Sunday, August 22nd, 2021 </h4>
         <div class="flex-container">
-            <div class="event">Shuttle To the Venue</div>
+            <div class="event">Shuttles To the Venue</div>
             <div class="details">
-                <div>TBD - Check back soon!</div>
+                <div>3:45 PM</div>
                 <div class="location">
                     DoubleTree by Hilton Hotel Leominster
                     <br />
@@ -37,9 +37,9 @@
             </div>
         </div>
         <div class="flex-container">
-            <div class="event">Shuttle To the Hotel</div>
+            <div class="event">Shuttles To the Hotel</div>
             <div class="details">
-                <div>TBD - Check back soon!</div>
+                <div>10:30 PM</div>
                 <div class="location">
                     Harrington Farm
                     <br />
