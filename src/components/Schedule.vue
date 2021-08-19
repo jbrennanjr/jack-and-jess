@@ -53,7 +53,7 @@
         <div class="flex-container">
             <div class="event">Brunch</div>
             <div class="details">
-                <div>9:00 AM - 11:30 AM</div>
+                <div>9:30 AM - 11:00 AM</div>
                 <div class="location">DoubleTree by Hilton Hotel Leominster</div>
             </div>
         </div>
