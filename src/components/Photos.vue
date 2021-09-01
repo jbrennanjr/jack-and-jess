@@ -13,7 +13,18 @@
             </p>
             <a class="album-link" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">View full album</a>
         </div>
-        <div class="coming-soon">We will add photo albums for the ceremony and reception after the wedding. Be sure to check back later!</div>
+        <div class="album">
+            <a class="album-header" href="https://photos.app.goo.gl/Waq5EdxPdx7SKMm68" target="_blank">Wedding Photos - Harrington Farm</a>
+            <div class="photos">
+                <div class="photo wedding1"></div>
+                <div class="photo wedding2"></div>
+                <div class="photo wedding3"></div>
+            </div>
+            <p>
+                These photos were taken at the Harrington Farm in August 2021.
+            </p>
+            <a class="album-link" href="https://photos.app.goo.gl/e7obfPnXMWbTBefg6" target="_blank">View full album</a>
+        </div>
         <div class="photographer">Photos by Ginny Cummings - <a href="https://www.capturedbyginny.com" target="_blank">Captured By Ginny</a></div>
     </div>
 </template>
@@ -30,6 +41,7 @@ export default {
 
 .album {
     text-align: left;
+    margin-bottom: 20px;
 
     .photos {
         display: flex;
@@ -60,6 +72,21 @@ export default {
                 background-position: 0%;
                 width: 40%;
             }
+            &.wedding1 {
+                background-image: url('../assets/images/photos/wedding1.jpg');
+                background-position: 0%;
+                width: 25%;
+            }
+            &.wedding2 {
+                background-image: url('../assets/images/photos/wedding2.jpg');
+                background-position: 90%;
+                width: 35%;
+            }
+            &.wedding3 {
+                background-image: url('../assets/images/photos/wedding3.jpg');
+                background-position: 50%;
+                width: 40%;
+            }
         }
     }
 
@@ -81,14 +108,8 @@ export default {
     }
 }
 
-.coming-soon {
-    font-weight: bold;
-    margin-top: 20px;
-    padding-left: 20px;
-}
-
 .photographer {
-    margin-top: 50px;
+    margin-top: 30px;
     padding-left: 20px;
 }
 
@@ -110,6 +131,16 @@ export default {
                     background-position: 0% 50%;
                 }
                 &.engagement3 {
+                    background-position: 0% 10%;
+                }
+
+                &.wedding1 {
+                    background-position: 0% 20%;
+                }
+                &.wedding2 {
+                    background-position: 0% 0%;
+                }
+                &.wedding3 {
                     background-position: 0% 10%;
                 }
             }
